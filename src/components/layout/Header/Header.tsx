@@ -1,14 +1,5 @@
-import { HeaderProps } from './Header.types'
-import { useHeaderHelper } from './Header.helper'
+import { HeaderProps } from './Header.types';
 
-export default function Header({ }: HeaderProps) {
-  const {} = useHeaderHelper()
-
-  return (
-    <header>
-      {/* Contenido del header */}
-    </header>
-  )
+export default function Header({}: HeaderProps) {
+  return <header>{/* Contenido del header */}</header>;
 }
-
-export * from './Header.types'

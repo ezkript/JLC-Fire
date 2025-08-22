@@ -1,9 +1,2 @@
-import { CertificationsListProps } from './CertificationsList.types'
-
-export const useCertificationsListHelper = () => {
-  // Lógica y funciones helper para CertificationsList
-  
-  return {
-    // Retornar funciones y valores necesarios
-  }
-}
+// Helper functions for CertificationsList component
+// This file will be populated manually later

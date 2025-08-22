@@ -1,14 +1,5 @@
-import { ServicesProps } from './Services.types'
-import { useServicesHelper } from './Services.helper'
+import { ServicesProps } from './Services.types';
 
-export default function Services({ }: ServicesProps) {
-  const {} = useServicesHelper()
-
-  return (
-    <section>
-      {/* Contenido de servicios */}
-    </section>
-  )
+export default function Services({}: ServicesProps) {
+  return <section>{/* Contenido de servicios */}</section>;
 }
-
-export * from './Services.types'

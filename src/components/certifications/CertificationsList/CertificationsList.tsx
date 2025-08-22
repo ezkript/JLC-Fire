@@ -1,14 +1,5 @@
-import { CertificationsListProps } from './CertificationsList.types'
-import { useCertificationsListHelper } from './CertificationsList.helper'
+import { CertificationsListProps } from './CertificationsList.types';
 
-export default function CertificationsList({ }: CertificationsListProps) {
-  const {} = useCertificationsListHelper()
-
-  return (
-    <section>
-      {/* Lista de certificaciones */}
-    </section>
-  )
+export default function CertificationsList({}: CertificationsListProps) {
+  return <section>{/* Lista de certificaciones */}</section>;
 }
-
-export * from './CertificationsList.types'

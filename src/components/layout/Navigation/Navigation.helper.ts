@@ -1,9 +1,24 @@
-import { NavigationProps } from './Navigation.types'
+const navigationItems = [
+  {
+    label: 'Inicio',
+    href: '/',
+  },
+  {
+    label: 'Sobre nosotros',
+    href: '/about',
+  },
+  {
+    label: 'Proyectos',
+    href: '/projects',
+  },
+  {
+    label: 'Contacto',
+    href: '/contact',
+  },
+  {
+    label: 'Certificaciones',
+    href: '/certifications',
+  },
+];
 
-export const useNavigationHelper = () => {
-  // Lógica y funciones helper para la Navigation
-  
-  return {
-    // Retornar funciones y valores necesarios
-  }
-}
+export { navigationItems };

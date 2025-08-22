@@ -6,13 +6,18 @@
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
-    @apply bg-neutral-50 text-neutral-900;
+    @apply bg-white text-dark-900;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-heading font-semibold text-neutral-900;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-semibold text-dark-900;
   }
 
   h1 {
@@ -40,7 +45,7 @@
   }
 
   p {
-    @apply text-neutral-700 leading-relaxed;
+    @apply text-dark-700 leading-relaxed;
   }
 }
 
@@ -76,7 +81,7 @@
   }
 
   .btn-ghost {
-    @apply btn text-neutral-700 hover:bg-neutral-100 focus:ring-neutral-500;
+    @apply btn text-dark-700 hover:bg-neutral-100 focus:ring-dark-500;
   }
 
   /* Tarjetas */

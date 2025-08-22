@@ -1,9 +1,2 @@
-import { HeaderProps } from './Header.types'
-
-export const useHeaderHelper = () => {
-  // Lógica y funciones helper para el Header
-  
-  return {
-    // Retornar funciones y valores necesarios
-  }
-}
+// Helper functions for Header component
+// This file will be populated manually later

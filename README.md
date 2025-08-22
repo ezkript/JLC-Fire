@@ -13,29 +13,29 @@ Sitio web portfolio para empresa especializada en sistemas de seguridad electró
 
 ```
 src/
-├── app/                          
-│   ├── about/             
-│   ├── projects/          
-│   ├── contact/           
-│   ├── globals.css       
-│   ├── layout.tsx         
-│   └── page.tsx           
-├── components/           
-│   ├── layout/           
-│   │   ├── Header/       
-│   │   ├── Footer/       
-│   │   └── Navigation/   
-│   └── home/             
-│       ├── Hero/         
-│       └── Services/     
-│   └── certifications/ 
+├── app/
+│   ├── about/
+│   ├── projects/
+│   ├── contact/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── layout/
+│   │   ├── Header/
+│   │   ├── Footer/
+│   │   └── Navigation/
+│   └── home/
+│       ├── Hero/
+│       └── Services/
+│   └── certifications/
 │       ├── CertificationsList/
 │       └── CertificationCard/
-├── lib/                  
-│   ├── constants.ts      
-│   └── utils.ts          
-└── types/               
-    └── index.ts          
+├── lib/
+│   ├── constants.ts
+│   └── utils.ts
+└── types/
+    └── index.ts
 ```
 
 ## Arquitectura de Componentes
@@ -45,7 +45,6 @@ Cada componente sigue el patrón de división de responsabilidades:
 - `Component.tsx` - Lógica de presentación
 - `Component.types.ts` - Tipos e interfaces
 - `Component.helper.ts` - Lógica de negocio y utilidades
-- `index.ts` - Exportaciones
 
 ## Páginas
 
@@ -67,4 +66,4 @@ Cada componente sigue el patrón de división de responsabilidades:
 - ESLint para linting
 - PostCSS para procesamiento de CSS
 - Configuración optimizada para Next.js 14
-Portfolio para la empresa JLC Fire
+  Portfolio para la empresa JLC Fire

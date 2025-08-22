@@ -1,14 +1,5 @@
-import { CertificationCardProps } from './CertificationCard.types'
-import { useCertificationCardHelper } from './CertificationCard.helper'
+import { CertificationCardProps } from './CertificationCard.types';
 
-export default function CertificationCard({ }: CertificationCardProps) {
-  const {} = useCertificationCardHelper()
-
-  return (
-    <div>
-      {/* Tarjeta de certificación individual */}
-    </div>
-  )
+export default function CertificationCard({}: CertificationCardProps) {
+  return <div>{/* Tarjeta de certificación individual */}</div>;
 }
-
-export * from './CertificationCard.types'

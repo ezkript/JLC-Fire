@@ -1,14 +1,5 @@
-import { FooterProps } from './Footer.types'
-import { useFooterHelper } from './Footer.helper'
+import { FooterProps } from './Footer.types';
 
-export default function Footer({ }: FooterProps) {
-  const {} = useFooterHelper()
-
-  return (
-    <footer>
-      {/* Contenido del footer */}
-    </footer>
-  )
+export default function Footer({}: FooterProps) {
+  return <footer>{/* Contenido del footer */}</footer>;
 }
-
-export * from './Footer.types'
