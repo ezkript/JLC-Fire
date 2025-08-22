@@ -2,10 +2,11 @@ export const getHamburgerLineClasses = (
   isOpen: boolean,
   lineIndex: number
 ): string => {
-  const baseClasses = 'absolute inset-0 transform transition-all duration-300';
+  const baseClasses =
+    'absolute inset-0 transform transition-all duration-300 flex items-center justify-center';
 
   if (lineIndex === 0) {
-    return `${baseClasses} ${isOpen ? 'rotate-45 translate-y-0' : '-translate-y-1'}`;
+    return `${baseClasses} ${isOpen ? 'rotate-45 translate-y-0' : '-translate-y-2'}`;
   }
 
   if (lineIndex === 1) {
@@ -13,7 +14,7 @@ export const getHamburgerLineClasses = (
   }
 
   if (lineIndex === 2) {
-    return `${baseClasses} ${isOpen ? '-rotate-45 translate-y-0' : 'translate-y-1'}`;
+    return `${baseClasses} ${isOpen ? '-rotate-45 translate-y-0' : 'translate-y-2'}`;
   }
 
   return baseClasses;

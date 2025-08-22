@@ -6,16 +6,16 @@ export default function MobileMenuButton(props: Props) {
   return (
     <button
       onClick={onClick}
-      className="lg:hidden relative p-3 rounded-xl text-dark-700 hover:text-primary-600 hover:bg-neutral-50 transition-all duration-300"
+      className="lg:hidden relative p-3.5 rounded-xl text-dark-700 hover:text-primary-600 hover:bg-neutral-50 transition-all duration-300 flex items-center justify-center"
       aria-label="Toggle menu"
     >
-      <div className="relative w-6 h-6">
+      <div className="relative w-7 h-7 flex items-center justify-center">
         {[0, 1, 2].map(lineIndex => (
           <span
             key={lineIndex}
             className={getHamburgerLineClasses(isOpen, lineIndex)}
           >
-            <div className="w-6 h-0.5 bg-current rounded-full"></div>
+            <div className="w-7 h-0.5 bg-current rounded-full"></div>
           </span>
         ))}
       </div>
