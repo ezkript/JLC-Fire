@@ -14,6 +14,8 @@ export default function Button(props: Props) {
       'bg-secondary-600 text-white hover:bg-secondary-700 shadow-soft hover:shadow-medium hover:-translate-y-0.5',
     outline:
       'border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white',
+    'outline-light':
+      'border-2 border-white text-white hover:bg-white hover:text-dark-900',
     ghost: 'text-dark-700 hover:text-primary-600 hover:bg-neutral-50',
   };
 

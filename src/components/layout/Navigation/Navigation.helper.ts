@@ -4,20 +4,24 @@ const navigationItems = [
     href: '/',
   },
   {
-    label: 'Sobre nosotros',
-    href: '/about',
+    label: 'Servicios',
+    href: '/services',
   },
   {
     label: 'Proyectos',
     href: '/projects',
   },
   {
-    label: 'Contacto',
-    href: '/contact',
+    label: 'Sobre nosotros',
+    href: '/about',
   },
   {
     label: 'Certificaciones',
     href: '/certifications',
+  },
+  {
+    label: 'Contacto',
+    href: '/contact',
   },
 ];
 

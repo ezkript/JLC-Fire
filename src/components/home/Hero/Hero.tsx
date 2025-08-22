@@ -84,9 +84,9 @@ export default function Hero(props: Props) {
               </Button>
               <Button
                 href="/projects"
-                variant="outline"
+                variant="outline-light"
                 size="lg"
-                className="text-sm sm:text-base lg:text-lg px-6 sm:px-8 py-3 sm:py-4 border-white text-white hover:bg-white hover:text-dark-900 w-full sm:w-auto"
+                className="text-sm sm:text-base lg:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
               >
                 Ver Todos los Proyectos
               </Button>
