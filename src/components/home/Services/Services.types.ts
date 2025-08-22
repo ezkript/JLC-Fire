@@ -1,3 +1,10 @@
 export interface ServicesProps {
-  // Propiedades del componente Services
+  // Props can be added here if needed in the future
+}
+
+export interface Service {
+  id: string;
+  title: string;
+  icon: string;
+  href: string;
 }

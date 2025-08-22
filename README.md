@@ -9,35 +9,6 @@ Sitio web portfolio para empresa especializada en sistemas de seguridad electró
 - **TailwindCSS** - Framework de CSS
 - **Lucide React** - Iconografía
 
-## Estructura del Proyecto
-
-```
-src/
-├── app/
-│   ├── about/
-│   ├── projects/
-│   ├── contact/
-│   ├── globals.css
-│   ├── layout.tsx
-│   └── page.tsx
-├── components/
-│   ├── layout/
-│   │   ├── Header/
-│   │   ├── Footer/
-│   │   └── Navigation/
-│   └── home/
-│       ├── Hero/
-│       └── Services/
-│   └── certifications/
-│       ├── CertificationsList/
-│       └── CertificationCard/
-├── lib/
-│   ├── constants.ts
-│   └── utils.ts
-└── types/
-    └── index.ts
-```
-
 ## Arquitectura de Componentes
 
 Cada componente sigue el patrón de división de responsabilidades:
