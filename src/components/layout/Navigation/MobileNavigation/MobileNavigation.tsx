@@ -6,8 +6,11 @@ import {
 } from './MobileNavigation.helper';
 import NavLink from '../NavLink/NavLink';
 import Button from '@/components/global/Button/Button';
+import { useContactModal } from '@/components/global/ContactModal/ContactModalProvider';
 
 export default function MobileNavigation(props: Props) {
+  const { openModal } = useContactModal();
+
   if (!shouldRenderMobileMenu(props.isOpen)) return null;
 
   return (
@@ -24,11 +27,13 @@ export default function MobileNavigation(props: Props) {
         ))}
         <div className="pt-2">
           <Button
-            href="/contact"
+            onClick={() => {
+              openModal();
+              props.onClose();
+            }}
             variant="primary"
             size="lg"
             fullWidth
-            onClick={props.onClose}
           >
             Contactar
           </Button>

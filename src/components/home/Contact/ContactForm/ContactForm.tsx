@@ -9,7 +9,7 @@ import {
   SubmitStatus,
 } from './ContactForm.types';
 import { serviceOptions, initialFormData } from './ContactForm.helper';
-import { contactInfo } from '../Contact.helper';
+import { CONTACT_DATA } from '@/lib/constants';
 
 export default function ContactForm(props: ContactFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -270,7 +270,7 @@ export default function ContactForm(props: ContactFormProps) {
               <p className="font-bold text-sm">Error al enviar el mensaje</p>
               <p className="text-xs text-red-300 mt-1">
                 Por favor, inténtalo de nuevo o contacta directamente a{' '}
-                {contactInfo.email}
+                {CONTACT_DATA.email}
               </p>
             </div>
           </div>

@@ -2,9 +2,11 @@ import { DesktopNavigationProps as Props } from './DesktopNavigation.types';
 import { getNavigationItems, isCurrentPath } from './DesktopNavigation.helper';
 import NavLink from '../NavLink/NavLink';
 import Button from '@/components/global/Button/Button';
+import { useContactModal } from '@/components/global/ContactModal/ContactModalProvider';
 
 export default function DesktopNavigation(props: Props) {
   const navigationItems = getNavigationItems(props);
+  const { openModal } = useContactModal();
 
   return (
     <>
@@ -20,7 +22,7 @@ export default function DesktopNavigation(props: Props) {
       </div>
 
       <div className="hidden lg:block">
-        <Button href="/contact" variant="primary" size="md">
+        <Button onClick={openModal} variant="primary" size="md">
           Contactar
         </Button>
       </div>

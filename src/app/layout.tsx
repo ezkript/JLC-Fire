@@ -5,6 +5,7 @@ import Navigation from '@/components/layout/Navigation/Navigation';
 import Footer from '@/components/layout/Footer/Footer';
 import WhatsAppButton from '@/components/global/WhatsAppButton/WhatsAppButton';
 import ScrollToTop from '@/components/global/ScrollToTop/ScrollToTop';
+import ContactModalProvider from '@/components/global/ContactModal/ContactModalProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -22,11 +23,13 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={inter.className}>
-        <Navigation />
-        <main>{children}</main>
-        <Footer />
-        <WhatsAppButton />
-        <ScrollToTop />
+        <ContactModalProvider>
+          <Navigation />
+          <main>{children}</main>
+          <Footer />
+          <WhatsAppButton />
+          <ScrollToTop />
+        </ContactModalProvider>
       </body>
     </html>
   );

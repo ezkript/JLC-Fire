@@ -1,20 +1,20 @@
 import { Mail, Phone, MapPin } from 'lucide-react';
-import { contactInfo } from '../Contact.helper';
+import { CONTACT_DATA } from '@/lib/constants';
 
 export const contactCards = [
   {
     icon: Mail,
     title: 'Email',
-    value: contactInfo.email,
+    value: CONTACT_DATA.email,
   },
   {
     icon: Phone,
     title: 'Teléfono',
-    value: contactInfo.phone,
+    value: CONTACT_DATA.phoneNumber,
   },
   {
     icon: MapPin,
     title: 'Ubicación',
-    value: contactInfo.location,
+    value: CONTACT_DATA.address,
   },
 ];

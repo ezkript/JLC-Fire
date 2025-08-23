@@ -1,11 +1,11 @@
 'use client';
 
 import { WhatsAppButtonProps as Props } from './WhatsAppButton.types';
-import { defaultWhatsAppConfig } from './WhatsAppButton.helper';
 import WhatsAppIcon from './WhatsAppIcon';
+import { CONTACT_DATA } from '@/lib/constants';
 
 export default function WhatsAppButton(props: Props) {
-  const { phoneNumber = defaultWhatsAppConfig.phoneNumber } = props;
+  const { phoneNumber = CONTACT_DATA.phoneNumber } = props;
 
   const whatsappUrl = `https://wa.me/${phoneNumber}`;
 
