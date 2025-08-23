@@ -4,6 +4,7 @@ import { heroProjects, getCurrentProject } from './Hero.helper';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Button from '@/components/global/Button/Button';
+import { AnimatedSection } from '@/components/global/AnimatedSection/AnimatedSection';
 
 export default function Hero(props: Props) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -49,48 +50,54 @@ export default function Hero(props: Props) {
       <div className="relative z-10 flex items-center justify-center h-full">
         <div className="container-custom text-center text-white">
           <div className="max-w-4xl mx-auto">
-            <h1
-              className={`text-xl sm:text-xl md:text-xl lg:text-xl xl:text-xl font-bold mb-4 sm:mb-6 leading-tight text-primary-500 drop-shadow-lg transition-all duration-300 ${
-                isTransitioning
-                  ? 'opacity-0 transform translate-y-4'
-                  : 'opacity-100 transform translate-y-0'
-              }`}
-            >
-              {currentProject.title}
-            </h1>
-            <p
-              className={`text-sm sm:text-sm md:text-sm lg:text-sm mb-6 sm:mb-8 text-white leading-relaxed max-w-3xl mx-auto drop-shadow-md transition-all duration-300 delay-75 ${
-                isTransitioning
-                  ? 'opacity-0 transform translate-y-4'
-                  : 'opacity-100 transform translate-y-0'
-              }`}
-            >
-              {currentProject.description}
-            </p>
-            <div
-              className={`flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center transition-all duration-300 delay-150 ${
-                isTransitioning
-                  ? 'opacity-0 transform translate-y-4'
-                  : 'opacity-100 transform translate-y-0'
-              }`}
-            >
-              <Button
-                href={currentProject.ctaLink}
-                variant="primary"
-                size="lg"
-                className="text-sm sm:text-sm lg:text-sm px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
+            <AnimatedSection delay={0.2} direction="up">
+              <h1
+                className={`text-xl sm:text-xl md:text-xl lg:text-xl xl:text-xl font-bold mb-4 sm:mb-6 leading-tight text-primary-500 drop-shadow-lg transition-all duration-300 ${
+                  isTransitioning
+                    ? 'opacity-0 transform translate-y-4'
+                    : 'opacity-100 transform translate-y-0'
+                }`}
               >
-                {currentProject.ctaText}
-              </Button>
-              <Button
-                href="/projects"
-                variant="outline-light"
-                size="lg"
-                className="text-sm sm:text-sm lg:text-sm px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
+                {currentProject.title}
+              </h1>
+            </AnimatedSection>
+            <AnimatedSection delay={0.2} direction="up">
+              <p
+                className={`text-sm sm:text-sm md:text-sm lg:text-sm mb-6 sm:mb-8 text-white leading-relaxed max-w-3xl mx-auto drop-shadow-md transition-all duration-300 delay-75 ${
+                  isTransitioning
+                    ? 'opacity-0 transform translate-y-4'
+                    : 'opacity-100 transform translate-y-0'
+                }`}
               >
-                Ver Todos los Proyectos
-              </Button>
-            </div>
+                {currentProject.description}
+              </p>
+            </AnimatedSection>
+            <AnimatedSection delay={0.6} direction="up">
+              <div
+                className={`flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center transition-all duration-300 delay-150 ${
+                  isTransitioning
+                    ? 'opacity-0 transform translate-y-4'
+                    : 'opacity-100 transform translate-y-0'
+                }`}
+              >
+                <Button
+                  href={currentProject.ctaLink}
+                  variant="primary"
+                  size="lg"
+                  className="text-sm sm:text-sm lg:text-sm px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
+                >
+                  {currentProject.ctaText}
+                </Button>
+                <Button
+                  href="/projects"
+                  variant="outline-light"
+                  size="lg"
+                  className="text-sm sm:text-sm lg:text-sm px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
+                >
+                  Ver Todos los Proyectos
+                </Button>
+              </div>
+            </AnimatedSection>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ export const shouldRenderMobileMenu = (isOpen: boolean): boolean => {
 };
 
 export const getMobileMenuClasses = (): string => {
-  return 'lg:hidden';
+  return 'lg:hidden overflow-hidden';
 };
 
 export const getMobileMenuContentClasses = (): string => {

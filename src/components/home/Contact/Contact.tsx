@@ -3,6 +3,7 @@ import ContactHeader from './ContactHeader/ContactHeader';
 import ContactInfoCards from './ContactInfoCards/ContactInfoCards';
 import ContactForm from './ContactForm/ContactForm';
 import ContactFallback from './ContactFallback/ContactFallback';
+import { AnimatedSection } from '@/components/global/AnimatedSection/AnimatedSection';
 
 export default function Contact(prop: Props) {
   const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
@@ -16,10 +17,16 @@ export default function Contact(prop: Props) {
   return (
     <section className="py-16 bg-black relative overflow-hidden">
       <div className="container-custom relative z-10">
-        <ContactHeader />
+        <AnimatedSection direction="up" delay={0.2}>
+          <ContactHeader />
+        </AnimatedSection>
         <div className="max-w-4xl mx-auto">
-          <ContactForm />
-          <ContactInfoCards />
+          <AnimatedSection direction="up" delay={0.2}>
+            <ContactForm />
+          </AnimatedSection>
+          <AnimatedSection direction="up" delay={0.2}>
+            <ContactInfoCards />
+          </AnimatedSection>
         </div>
       </div>
     </section>

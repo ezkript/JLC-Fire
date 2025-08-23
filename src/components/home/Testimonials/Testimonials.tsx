@@ -1,21 +1,28 @@
 import Image from 'next/image';
 import { ClientsProps as Props } from './Testimonials.types';
 import { clients, sectionConfig } from './Testimonials.helper';
+import { AnimatedSection } from '@/components/global/AnimatedSection/AnimatedSection';
 
 export default function Clients(props: Props) {
   return (
     <section className="py-16 bg-gradient-to-br from-neutral-50 to-white">
       <div className="container-custom">
-        <div className="text-center mb-16">
-          <h2 className="text-xl font-bold text-dark-900 mb-4">
-            {sectionConfig.title}
-          </h2>
-          <p className="text-sm text-neutral-600 max-w-3xl mx-auto">
-            {sectionConfig.subtitle}
-          </p>
-        </div>
+        <AnimatedSection direction="up" delay={0.2}>
+          <div className="text-center mb-16">
+            <h2 className="text-xl font-bold text-dark-900 mb-4">
+              {sectionConfig.title}
+            </h2>
+            <p className="text-sm text-neutral-600 max-w-3xl mx-auto">
+              {sectionConfig.subtitle}
+            </p>
+          </div>
+        </AnimatedSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <AnimatedSection
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          direction="up"
+          delay={0.2}
+        >
           {clients.map(client => (
             <div
               key={client.id}
@@ -46,7 +53,7 @@ export default function Clients(props: Props) {
               </div>
             </div>
           ))}
-        </div>
+        </AnimatedSection>
       </div>
     </section>
   );
