@@ -46,11 +46,11 @@ export default function Hero(props: Props) {
         />
         <div className="absolute inset-0 bg-black/60" />
       </div>
-      <div className="relative z-10 flex items-center justify-center h-full px-4 sm:px-6">
+      <div className="relative z-10 flex items-center justify-center h-full">
         <div className="container-custom text-center text-white">
           <div className="max-w-4xl mx-auto">
             <h1
-              className={`text-xl sm:text-xl md:text-xl lg:text-xl xl:text-xl font-bold mb-4 sm:mb-6 leading-tight text-primary-500 drop-shadow-lg px-4 transition-all duration-300 ${
+              className={`text-xl sm:text-xl md:text-xl lg:text-xl xl:text-xl font-bold mb-4 sm:mb-6 leading-tight text-primary-500 drop-shadow-lg transition-all duration-300 ${
                 isTransitioning
                   ? 'opacity-0 transform translate-y-4'
                   : 'opacity-100 transform translate-y-0'
@@ -59,7 +59,7 @@ export default function Hero(props: Props) {
               {currentProject.title}
             </h1>
             <p
-              className={`text-sm sm:text-sm md:text-sm lg:text-sm mb-6 sm:mb-8 text-white leading-relaxed max-w-3xl mx-auto drop-shadow-md px-4 transition-all duration-300 delay-75 ${
+              className={`text-sm sm:text-sm md:text-sm lg:text-sm mb-6 sm:mb-8 text-white leading-relaxed max-w-3xl mx-auto drop-shadow-md transition-all duration-300 delay-75 ${
                 isTransitioning
                   ? 'opacity-0 transform translate-y-4'
                   : 'opacity-100 transform translate-y-0'
@@ -68,7 +68,7 @@ export default function Hero(props: Props) {
               {currentProject.description}
             </p>
             <div
-              className={`flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 transition-all duration-300 delay-150 ${
+              className={`flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center transition-all duration-300 delay-150 ${
                 isTransitioning
                   ? 'opacity-0 transform translate-y-4'
                   : 'opacity-100 transform translate-y-0'
