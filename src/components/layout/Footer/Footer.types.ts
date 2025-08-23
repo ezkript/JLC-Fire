@@ -1,3 +1,3 @@
 export interface FooterProps {
-  // Propiedades del componente Footer
+  // No props needed for now, but can be extended in the future
 }

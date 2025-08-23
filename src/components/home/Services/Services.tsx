@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { Flame, Shield, Key, Building2, Wrench, Monitor } from 'lucide-react';
 import { ServicesProps as Props } from './Services.types';
-import { services } from './Services.helper';
+import { services, sectionConfig } from './Services.helper';
 
 export default function Services(props: Props) {
   return (
@@ -11,11 +11,10 @@ export default function Services(props: Props) {
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-xl font-bold text-dark-900 mb-6">
-            Nuestros Servicios
+            {sectionConfig.title}
           </h2>
           <p className="text-sm text-dark-600 max-w-3xl mx-auto">
-            Soluciones integrales en sistemas de seguridad electrónica,
-            detección y extinción de incendios
+            {sectionConfig.subtitle}
           </p>
         </div>
 

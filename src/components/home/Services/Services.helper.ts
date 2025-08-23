@@ -1,6 +1,12 @@
 // Helper functions for Services component
 // This file will be populated manually later
 
+export const sectionConfig = {
+  title: 'Servicios',
+  subtitle:
+    'Ofrecemos soluciones integrales en sistemas de seguridad electrónica y protección contra incendios',
+};
+
 export const services = [
   {
     id: 'fire-detection',

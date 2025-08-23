@@ -15,18 +15,30 @@ export default function Logo(props: Props) {
         </div>
         <div className="absolute -top-1 -right-1 w-3 h-3 bg-primary-400 rounded-full opacity-75"></div>
       </div>
-      {variant === 'default' && (
+      {variant === 'default' ? (
         <div className="flex flex-col">
           <span className="text-sm font-bold text-dark-900 group-hover:text-primary-600 transition-colors duration-300">
             JLC Fire
           </span>
-          {showSubtitle && (
+          {showSubtitle ? (
             <span className="text-xs text-dark-500 font-medium">
               Sistemas de Seguridad
             </span>
-          )}
+          ) : null}
         </div>
-      )}
+      ) : null}
+      {variant === 'light' ? (
+        <div className="flex flex-col">
+          <span className="text-sm font-bold text-white group-hover:text-primary-400 transition-colors duration-300">
+            JLC Fire
+          </span>
+          {showSubtitle ? (
+            <span className="text-xs text-neutral-300 font-medium">
+              Sistemas de Seguridad
+            </span>
+          ) : null}
+        </div>
+      ) : null}
     </Link>
   );
 }

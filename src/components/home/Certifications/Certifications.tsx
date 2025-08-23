@@ -1,6 +1,6 @@
 'use client';
 import { CertificationsProps as Props } from './Certifications.types';
-import { certificationLogos } from './Certifications.helper';
+import { certificationLogos, sectionConfig } from './Certifications.helper';
 
 export default function Certifications(props: Props) {
   return (
@@ -8,11 +8,10 @@ export default function Certifications(props: Props) {
       <div className="container-custom">
         <div className="text-center mb-12">
           <h2 className="text-xl font-bold text-dark-900 mb-4">
-            Certificaciones y Acreditaciones
+            {sectionConfig.title}
           </h2>
           <p className="text-sm text-dark-600 max-w-2xl mx-auto">
-            Contamos con las certificaciones más importantes del sector para
-            garantizar la calidad y seguridad en todos nuestros proyectos.
+            {sectionConfig.subtitle}
           </p>
         </div>
 
