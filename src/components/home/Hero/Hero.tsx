@@ -50,7 +50,7 @@ export default function Hero(props: Props) {
         <div className="container-custom text-center text-white">
           <div className="max-w-4xl mx-auto">
             <h1
-              className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 leading-tight text-primary-500 drop-shadow-lg px-4 transition-all duration-300 ${
+              className={`text-xl sm:text-xl md:text-xl lg:text-xl xl:text-xl font-bold mb-4 sm:mb-6 leading-tight text-primary-500 drop-shadow-lg px-4 transition-all duration-300 ${
                 isTransitioning
                   ? 'opacity-0 transform translate-y-4'
                   : 'opacity-100 transform translate-y-0'
@@ -59,7 +59,7 @@ export default function Hero(props: Props) {
               {currentProject.title}
             </h1>
             <p
-              className={`text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-white leading-relaxed max-w-3xl mx-auto drop-shadow-md px-4 transition-all duration-300 delay-75 ${
+              className={`text-sm sm:text-sm md:text-sm lg:text-sm mb-6 sm:mb-8 text-white leading-relaxed max-w-3xl mx-auto drop-shadow-md px-4 transition-all duration-300 delay-75 ${
                 isTransitioning
                   ? 'opacity-0 transform translate-y-4'
                   : 'opacity-100 transform translate-y-0'
@@ -78,7 +78,7 @@ export default function Hero(props: Props) {
                 href={currentProject.ctaLink}
                 variant="primary"
                 size="lg"
-                className="text-sm sm:text-base lg:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
+                className="text-sm sm:text-sm lg:text-sm px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
               >
                 {currentProject.ctaText}
               </Button>
@@ -86,7 +86,7 @@ export default function Hero(props: Props) {
                 href="/projects"
                 variant="outline-light"
                 size="lg"
-                className="text-sm sm:text-base lg:text-lg px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
+                className="text-sm sm:text-sm lg:text-sm px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
               >
                 Ver Todos los Proyectos
               </Button>

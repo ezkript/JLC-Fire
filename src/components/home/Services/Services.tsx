@@ -10,10 +10,10 @@ export default function Services(props: Props) {
     <section className="py-20 bg-white">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-dark-900 mb-6">
+          <h2 className="text-xl font-bold text-dark-900 mb-6">
             Nuestros Servicios
           </h2>
-          <p className="text-lg text-dark-600 max-w-3xl mx-auto">
+          <p className="text-sm text-dark-600 max-w-3xl mx-auto">
             Soluciones integrales en sistemas de seguridad electrónica,
             detección y extinción de incendios
           </p>
@@ -57,7 +57,7 @@ export default function Services(props: Props) {
                   </div>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-lg font-bold text-dark-900 group-hover:text-primary-700 transition-colors duration-300 mb-2">
+                  <h3 className="text-sm font-bold text-dark-900 group-hover:text-primary-700 transition-colors duration-300 mb-2">
                     {service.title}
                   </h3>
                   <div className="flex items-center space-x-2">

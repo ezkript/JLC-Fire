@@ -17,7 +17,7 @@ export default function Logo(props: Props) {
       </div>
       {variant === 'default' && (
         <div className="flex flex-col">
-          <span className="text-xl font-bold text-dark-900 group-hover:text-primary-600 transition-colors duration-300">
+          <span className="text-sm font-bold text-dark-900 group-hover:text-primary-600 transition-colors duration-300">
             JLC Fire
           </span>
           {showSubtitle && (

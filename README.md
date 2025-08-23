@@ -37,4 +37,17 @@ Cada componente sigue el patrón de división de responsabilidades:
 - ESLint para linting
 - PostCSS para procesamiento de CSS
 - Configuración optimizada para Next.js 14
-  Portfolio para la empresa JLC Fire
+
+## Variables de Entorno
+
+El proyecto utiliza variables de entorno para configurar EmailJS:
+
+```bash
+# Copiar el archivo de ejemplo
+cp env.example .env.local
+
+# Configurar las siguientes variables:
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id_here
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id_here
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key_here
+```
