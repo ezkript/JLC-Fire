@@ -1,6 +1,6 @@
-import { Certification } from '../CertificationsList/CertificationsList.types';
+import { Certification } from '@/types';
 
 export interface CertificationCardProps {
   certification: Certification;
-  // Propiedades adicionales del componente CertificationCard
+  delay?: number;
 }
