@@ -10,9 +10,12 @@ import ContactModalProvider from '@/components/global/ContactModal/ContactModalP
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'JLC Fire - Sistemas de Seguridad y Detección de Incendios',
+  title: 'JLC Fire - Sistemas de Seguridad',
   description:
-    'Especialistas en sistemas de seguridad electrónica, detección y extinción de incendios, control de acceso, BMS y mantenimiento.'
+    'Especialistas en sistemas de seguridad electrónica, detección y extinción de incendios, control de acceso, BMS y mantenimiento.',
+  icons: {
+    icon: '/favicon.ico'
+  }
 };
 
 export default function RootLayout({

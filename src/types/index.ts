@@ -40,7 +40,7 @@ export interface Certification {
 }
 
 export interface ProjectPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
