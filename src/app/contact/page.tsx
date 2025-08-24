@@ -1,3 +1,5 @@
-export default function ContactPage() {
-  return <>{/* Contenido de la página de contacto */}</>;
+import ContactPage from '@/components/contact/ContactPage/ContactPage';
+
+export default function ContactPageRoute() {
+  return <ContactPage />;
 }
