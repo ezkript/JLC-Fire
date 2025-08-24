@@ -7,14 +7,14 @@ export const themeConfig = {
     secondary: 'secondary', // Grises para texto y bordes
     accent: 'accent', // Rojo para efectos hover
     neutral: 'neutral', // Blancos y grises claros
-    dark: 'dark', // Grises oscuros para texto
+    dark: 'dark' // Grises oscuros para texto
   },
 
   // Colores semánticos
   semantic: {
     success: 'success',
     warning: 'warning',
-    error: 'error',
+    error: 'error'
   },
 
   // Configuración de componentes
@@ -23,14 +23,14 @@ export const themeConfig = {
     header: {
       background: 'bg-white',
       text: 'text-dark-900',
-      border: 'border-neutral-200',
+      border: 'border-neutral-200'
     },
 
     // Navegación
     navigation: {
       link: 'text-dark-700 hover:text-primary-600',
       activeLink: 'text-primary-600',
-      mobileMenu: 'bg-white border-neutral-200',
+      mobileMenu: 'bg-white border-neutral-200'
     },
 
     // Botones
@@ -38,35 +38,35 @@ export const themeConfig = {
       primary: 'btn-primary',
       secondary: 'btn-secondary',
       outline: 'btn-outline',
-      ghost: 'btn-ghost',
+      ghost: 'btn-ghost'
     },
 
     // Tarjetas
     cards: {
       default: 'card',
-      hover: 'card-hover',
+      hover: 'card-hover'
     },
 
     // Hero section
     hero: {
       background: 'bg-gradient-to-br from-primary-50 to-neutral-50',
       text: 'text-dark-900',
-      accent: 'text-primary-600',
+      accent: 'text-primary-600'
     },
 
     // Servicios
     services: {
       background: 'bg-white',
       card: 'card-hover',
-      icon: 'text-primary-600',
+      icon: 'text-primary-600'
     },
 
     // Footer
     footer: {
       background: 'bg-dark-900',
       text: 'text-neutral-300',
-      link: 'text-neutral-400 hover:text-white',
-    },
+      link: 'text-neutral-400 hover:text-white'
+    }
   },
 
   // Espaciado y layout
@@ -76,14 +76,14 @@ export const themeConfig = {
     sectionLarge: 'section-lg',
     container: 'container-custom',
     containerNarrow: 'container-narrow',
-    containerWide: 'container-wide',
+    containerWide: 'container-wide'
   },
 
   // Tipografía
   typography: {
     heading: 'font-heading',
-    body: 'font-sans',
-  },
+    body: 'font-sans'
+  }
 };
 
 // Función helper para obtener colores del tema
@@ -96,7 +96,7 @@ export const getThemeColor = (colorName: string, shade: string = '500') => {
     dark: `dark-${shade}`,
     success: `success-${shade}`,
     warning: `warning-${shade}`,
-    error: `error-${shade}`,
+    error: `error-${shade}`
   };
 
   return colorMap[colorName] || `neutral-${shade}`;

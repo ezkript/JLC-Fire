@@ -5,7 +5,7 @@ import {
   MapPin,
   Linkedin,
   Instagram,
-  Facebook,
+  Facebook
 } from 'lucide-react';
 import { FooterProps as Props } from './Footer.types';
 import { footerInfo } from './Footer.helper';

@@ -6,7 +6,7 @@ import { Send, CheckCircle, AlertCircle } from 'lucide-react';
 import {
   ContactFormProps,
   FormData as FormDataType,
-  SubmitStatus,
+  SubmitStatus
 } from './ContactForm.types';
 import { serviceOptions, initialFormData } from './ContactForm.helper';
 import { CONTACT_DATA } from '@/lib/constants';
@@ -95,7 +95,7 @@ export default function ContactForm(props: ContactFormProps) {
           email: formData.email,
           phone: formData.phone,
           service: formData.service,
-          message: formData.message,
+          message: formData.message
         };
 
         result = await emailjs.send(

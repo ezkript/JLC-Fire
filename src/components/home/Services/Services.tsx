@@ -1,7 +1,15 @@
 'use client';
 
 import Link from 'next/link';
-import { Flame, Shield, Key, Building2, Wrench, Monitor } from 'lucide-react';
+import {
+  Flame,
+  Shield,
+  Key,
+  Building2,
+  Wrench,
+  Monitor,
+  Fan
+} from 'lucide-react';
 import { ServicesProps as Props } from './Services.types';
 import { services, sectionConfig } from './Services.helper';
 import { AnimatedSection } from '@/components/global/AnimatedSection/AnimatedSection';
@@ -20,13 +28,14 @@ export default function Services(props: Props) {
             </p>
           </div>
         </AnimatedSection>
-
         <div className="relative">
-          <div className="hidden sm:block absolute left-1/3 top-0 bottom-0 w-px bg-neutral-300" />
+          <div className="hidden sm:block lg:hidden absolute left-1/2 top-0 bottom-0 w-px bg-neutral-300" />
+          <div className="hidden lg:block absolute left-1/3 top-0 bottom-0 w-px bg-neutral-300" />
           <div className="hidden lg:block absolute left-2/3 top-0 bottom-0 w-px bg-neutral-300" />
-          <div className="hidden sm:block absolute top-1/2 left-0 right-0 h-px bg-neutral-300" />
-          <div className="hidden sm:block absolute top-1/2 left-1/3 right-0 h-px bg-neutral-300" />
-          <div className="hidden lg:block absolute top-1/2 left-2/3 right-0 h-px bg-neutral-300" />
+          <div className="hidden sm:block lg:hidden absolute top-1/3 left-0 right-0 h-px bg-neutral-300" />
+          <div className="hidden sm:block lg:hidden absolute top-2/3 left-0 right-0 h-px bg-neutral-300" />
+          <div className="hidden lg:block absolute top-1/3 left-0 right-0 h-px bg-neutral-300" />
+          <div className="hidden lg:block absolute top-2/3 left-0 right-0 h-px bg-neutral-300" />
           <AnimatedSection
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
             direction="up"
@@ -42,24 +51,21 @@ export default function Services(props: Props) {
                   <div className="flex-shrink-0">
                     <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-300">
                       <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
-                        {service.icon === 'Flame' && (
+                        {service.icon === 'Flame' ? (
                           <Flame className="w-5 h-5 text-primary-600" />
-                        )}
-                        {service.icon === 'Shield' && (
+                        ) : service.icon === 'Shield' ? (
                           <Shield className="w-5 h-5 text-primary-600" />
-                        )}
-                        {service.icon === 'Key' && (
+                        ) : service.icon === 'Key' ? (
                           <Key className="w-5 h-5 text-primary-600" />
-                        )}
-                        {service.icon === 'Building2' && (
+                        ) : service.icon === 'Building2' ? (
                           <Building2 className="w-5 h-5 text-primary-600" />
-                        )}
-                        {service.icon === 'Wrench' && (
+                        ) : service.icon === 'Wrench' ? (
                           <Wrench className="w-5 h-5 text-primary-600" />
-                        )}
-                        {service.icon === 'Monitor' && (
+                        ) : service.icon === 'Monitor' ? (
                           <Monitor className="w-5 h-5 text-primary-600" />
-                        )}
+                        ) : service.icon === 'Fan' ? (
+                          <Fan className="w-5 h-5 text-primary-600" />
+                        ) : null}
                       </div>
                     </div>
                   </div>

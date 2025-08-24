@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser';
 import { Send, CheckCircle, AlertCircle } from 'lucide-react';
 import {
   serviceOptions,
-  initialFormData,
+  initialFormData
 } from '@/components/home/Contact/ContactForm/ContactForm.helper';
 import { FormData as FormDataType, SubmitStatus } from './ContactModal.types';
 import { CONTACT_DATA } from '@/lib/constants';
@@ -94,7 +94,7 @@ export default function ContactFormModal() {
           email: formData.email,
           phone: formData.phone,
           service: formData.service,
-          message: formData.message,
+          message: formData.message
         };
 
         result = await emailjs.send(

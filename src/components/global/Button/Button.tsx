@@ -16,13 +16,13 @@ export default function Button(props: Props) {
       'border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white',
     'outline-light':
       'border-2 border-white text-white hover:bg-white hover:text-dark-900',
-    ghost: 'text-dark-700 hover:text-primary-600 hover:bg-neutral-50',
+    ghost: 'text-dark-700 hover:text-primary-600 hover:bg-neutral-50'
   };
 
   const sizeClasses = {
     sm: 'px-3 py-2 text-sm',
     md: 'px-4 py-2 text-sm',
-    lg: 'px-6 py-3 text-sm',
+    lg: 'px-6 py-3 text-sm'
   };
 
   const widthClass = fullWidth ? 'w-full' : '';

@@ -29,7 +29,7 @@ interface ContactModalProviderProps {
 }
 
 export default function ContactModalProvider({
-  children,
+  children
 }: ContactModalProviderProps) {
   const [isOpen, setIsOpen] = useState(false);
 

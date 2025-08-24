@@ -10,7 +10,7 @@ export const heroProjects = [
     image:
       'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
     ctaText: 'Ver Proyecto',
-    ctaLink: '/projects/fire-detection-system',
+    ctaLink: '/projects/fire-detection-system'
   },
   {
     id: 'access-control-integration',
@@ -20,7 +20,7 @@ export const heroProjects = [
     image:
       'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
     ctaText: 'Ver Proyecto',
-    ctaLink: '/projects/access-control-integration',
+    ctaLink: '/projects/access-control-integration'
   },
   {
     id: 'bms-implementation',
@@ -30,7 +30,7 @@ export const heroProjects = [
     image:
       'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
     ctaText: 'Ver Proyecto',
-    ctaLink: '/projects/bms-implementation',
+    ctaLink: '/projects/bms-implementation'
   },
   {
     id: 'software-graphic',
@@ -40,8 +40,8 @@ export const heroProjects = [
     image:
       'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
     ctaText: 'Ver Proyecto',
-    ctaLink: '/projects/software-graphic',
-  },
+    ctaLink: '/projects/software-graphic'
+  }
 ];
 
 export const getCurrentProject = (currentIndex: number) => {

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { MobileMenuButtonProps as Props } from './MobileMenuButton.types';
 import {
   buttonVariants,
-  getHamburgerLineClasses,
+  getHamburgerLineClasses
 } from './MobileMenuButton.helper';
 
 export default function MobileMenuButton(props: Props) {
@@ -30,17 +30,17 @@ export default function MobileMenuButton(props: Props) {
                 ? {
                     rotate: lineIndex === 0 ? 45 : lineIndex === 2 ? -45 : 0,
                     y: 0,
-                    opacity: lineIndex === 1 ? 0 : 1,
+                    opacity: lineIndex === 1 ? 0 : 1
                   }
                 : {
                     rotate: 0,
                     y: lineIndex === 0 ? -8 : lineIndex === 2 ? 8 : 0,
-                    opacity: 1,
+                    opacity: 1
                   }
             }
             transition={{
               duration: 0.3,
-              ease: [0.25, 0.46, 0.45, 0.94],
+              ease: [0.25, 0.46, 0.45, 0.94]
             }}
           >
             <div className="w-7 h-0.5 bg-current rounded-full"></div>

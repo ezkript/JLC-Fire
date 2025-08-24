@@ -23,5 +23,5 @@ export const getHamburgerLineClasses = (
 export const buttonVariants = {
   rest: { scale: 1 },
   hover: { scale: 1.05 },
-  tap: { scale: 0.95 },
+  tap: { scale: 0.95 }
 };

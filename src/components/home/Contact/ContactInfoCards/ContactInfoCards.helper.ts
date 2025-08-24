@@ -5,16 +5,16 @@ export const contactCards = [
   {
     icon: Mail,
     title: 'Email',
-    value: CONTACT_DATA.email,
+    value: CONTACT_DATA.email
   },
   {
     icon: Phone,
     title: 'Teléfono',
-    value: CONTACT_DATA.phoneNumber,
+    value: CONTACT_DATA.phoneNumber
   },
   {
     icon: MapPin,
     title: 'Ubicación',
-    value: CONTACT_DATA.address,
-  },
+    value: CONTACT_DATA.address
+  }
 ];

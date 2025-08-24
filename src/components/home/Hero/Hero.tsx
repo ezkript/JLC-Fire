@@ -121,7 +121,7 @@ export default function Hero(props: Props) {
         <div
           className="h-full bg-primary-500 transition-all duration-300 ease-linear"
           style={{
-            width: `${((currentIndex + 1) / heroProjects.length) * 100}%`,
+            width: `${((currentIndex + 1) / heroProjects.length) * 100}%`
           }}
         />
       </div>

@@ -5,7 +5,7 @@ export const serviceOptions = [
   { value: 'access-control', label: 'Control de Acceso' },
   { value: 'bms', label: 'Building Management System' },
   { value: 'maintenance', label: 'Mantenimiento' },
-  { value: 'software-graphic', label: 'Software Gráfico' },
+  { value: 'software-graphic', label: 'Software Gráfico' }
 ];
 
 export const initialFormData = {
@@ -13,5 +13,5 @@ export const initialFormData = {
   email: '',
   phone: '',
   service: '',
-  message: '',
+  message: ''
 };

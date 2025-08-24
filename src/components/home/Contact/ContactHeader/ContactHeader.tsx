@@ -4,7 +4,7 @@ import { defaultHeaderText } from './ContactHeader.helper';
 export default function ContactHeader(props: Props) {
   const {
     title = defaultHeaderText.title,
-    subtitle = defaultHeaderText.subtitle,
+    subtitle = defaultHeaderText.subtitle
   } = props;
   return (
     <div className="text-center mb-12">

@@ -27,7 +27,7 @@ export default function ScrollToTop(props: Props) {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: 'smooth'
     });
   };
 

@@ -16,7 +16,7 @@ export const AnimatedSection = (props: Props) => {
       transition={{
         duration,
         delay,
-        ease: [0.25, 0.46, 0.45, 0.94],
+        ease: [0.25, 0.46, 0.45, 0.94]
       }}
     >
       {children}

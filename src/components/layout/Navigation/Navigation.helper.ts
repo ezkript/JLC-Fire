@@ -1,28 +1,39 @@
 const navigationItems = [
   {
     label: 'Inicio',
-    href: '/',
+    href: '/'
   },
   {
     label: 'Servicios',
-    href: '/services',
+    href: '#'
   },
   {
     label: 'Proyectos',
-    href: '/projects',
+    href: '/projects'
   },
   {
     label: 'Sobre nosotros',
-    href: '/about',
+    href: '/about'
   },
   {
     label: 'Certificaciones',
-    href: '/certifications',
+    href: '/certifications'
   },
   {
     label: 'Contacto',
-    href: '/contact',
-  },
+    href: '/contact'
+  }
 ];
+
+export const isServicesPage = (currentPath: string): boolean => {
+  return currentPath.startsWith('/services');
+};
+
+export const isLinkActive = (href: string, currentPath: string): boolean => {
+  if (href === '#') {
+    return isServicesPage(currentPath);
+  }
+  return currentPath === href;
+};
 
 export { navigationItems };

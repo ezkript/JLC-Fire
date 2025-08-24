@@ -6,5 +6,5 @@ export const CONTACT_DATA = {
   instagram: 'https://www.instagram.com/jlcfire',
   facebook: 'https://www.facebook.com/jlcfire',
   linkedin: 'https://www.linkedin.com/company/jlcfire',
-  twitter: 'https://x.com/jlcfire',
+  twitter: 'https://x.com/jlcfire'
 };
