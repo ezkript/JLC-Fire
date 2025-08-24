@@ -1,42 +1,53 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { LogoProps as Props } from './Logo.types';
 
 export default function Logo(props: Props) {
-  const { onClick, variant = 'default', showSubtitle = true } = props;
+  const { onClick, variant = 'default' } = props;
+
   return (
-    <Link
-      href="/"
-      className="flex items-center space-x-3 group"
-      onClick={onClick}
-    >
+    <Link href="/" className="flex items-center group" onClick={onClick}>
       <div className="relative">
-        <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center shadow-soft group-hover:shadow-medium transition-all duration-300 group-hover:scale-105">
-          <span className="text-white font-bold text-sm">JLC</span>
-        </div>
-        <div className="absolute -top-1 -right-1 w-3 h-3 bg-primary-400 rounded-full opacity-75"></div>
+        <Image
+          src="/logo.png"
+          alt="JLC Fire Logo"
+          width={48}
+          height={48}
+          className="object-contain"
+        />
       </div>
+
       {variant === 'default' ? (
-        <div className="flex flex-col">
-          <span className="text-sm font-bold text-dark-900 group-hover:text-primary-600 transition-colors duration-300">
-            JLC Fire
-          </span>
-          {showSubtitle ? (
-            <span className="text-xs text-dark-500 font-medium">
-              Sistemas de Seguridad
-            </span>
-          ) : null}
+        <div className="py-1">
+          <Image
+            src="/logotext.png"
+            alt="JLC Fire"
+            width={80}
+            height={24}
+            className="object-contain"
+          />
         </div>
       ) : null}
       {variant === 'light' ? (
-        <div className="flex flex-col">
-          <span className="text-sm font-bold text-white group-hover:text-primary-400 transition-colors duration-300">
-            JLC Fire
-          </span>
-          {showSubtitle ? (
-            <span className="text-xs text-neutral-300 font-medium">
-              Sistemas de Seguridad
-            </span>
-          ) : null}
+        <div className="rounded-md py-1">
+          <Image
+            src="/logotext.png"
+            alt="JLC Fire"
+            width={80}
+            height={24}
+            className="object-contain brightness-0 invert"
+          />
+        </div>
+      ) : null}
+      {variant === 'compact' ? (
+        <div className="w-8 h-8 flex items-center justify-center shadow-soft group-hover:shadow-medium transition-all duration-300 group-hover:scale-105">
+          <Image
+            src="/logo.png"
+            alt="JLC Fire Logo"
+            width={32}
+            height={32}
+            className="object-contain"
+          />
         </div>
       ) : null}
     </Link>
