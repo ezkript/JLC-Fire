@@ -38,3 +38,9 @@ export interface Certification {
   category: 'fire-safety' | 'security' | 'bms' | 'maintenance' | 'software';
   status: 'active' | 'expired' | 'pending';
 }
+
+export interface ProjectPageProps {
+  params: {
+    id: string;
+  };
+}

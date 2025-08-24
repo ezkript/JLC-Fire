@@ -1,3 +1,6 @@
+import { projectsData } from '@/lib/projects-data';
+import ProjectsList from '@/components/projects/ProjectsList/ProjectsList';
+
 export default function ProjectsPage() {
-  return <>{/* Contenido de la página de proyectos */}</>;
+  return <ProjectsList projects={projectsData} />;
 }
