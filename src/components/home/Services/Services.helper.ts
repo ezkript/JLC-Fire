@@ -16,7 +16,7 @@ export const services = [
   },
   {
     id: 'fire-suppression',
-    title: 'Extinción por Gases',
+    title: 'Extinción de Incendios',
     icon: 'Shield',
     href: '/services/fire-suppression'
   },

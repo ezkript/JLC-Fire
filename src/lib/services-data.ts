@@ -66,7 +66,7 @@ export const servicesData: ServiceDetail[] = [
   },
   {
     id: 'fire-suppression',
-    title: 'Extinción por Gases',
+    title: 'Extinción de Incendios',
     subtitle: 'Sistemas de extinción por gases limpios',
     description:
       'Implementamos sistemas de extinción por gases limpios que combaten incendios de manera eficiente y segura, sin dañar equipos electrónicos y minimizando el impacto en el medio ambiente.',
