@@ -89,12 +89,12 @@ export default function Hero(props: Props) {
                   {currentProject.ctaText}
                 </Button>
                 <Button
-                  href="/projects"
+                  href="/services"
                   variant="outline-light"
                   size="lg"
                   className="text-sm sm:text-sm lg:text-sm px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
                 >
-                  Ver Todos los Proyectos
+                  Ver Todos los Servicios
                 </Button>
               </div>
             </AnimatedSection>
@@ -112,7 +112,7 @@ export default function Hero(props: Props) {
                   ? 'bg-primary-500'
                   : 'bg-white/40 hover:bg-white/60'
               }`}
-              aria-label={`Ir al proyecto ${index + 1}`}
+              aria-label={`Ir al servicio ${index + 1}`}
             />
           ))}
         </div>

@@ -5,7 +5,7 @@ export const aboutData = {
   hero: {
     title: 'Sobre JLC Fire',
     description:
-      'Somos una empresa líder en el diseño, implementación y mantenimiento de sistemas de seguridad y protección contra incendios. Con más de 15 años de experiencia, hemos desarrollado soluciones innovadoras para empresas de diversos sectores, garantizando la protección de vidas y bienes.'
+      'Somos una empresa líder en el diseño, implementación y mantenimiento de sistemas de seguridad y protección contra incendios. Con más de 5 años de experiencia, hemos desarrollado soluciones innovadoras para empresas de diversos sectores, garantizando la protección de vidas y bienes.'
   },
 
   mission: {
@@ -42,40 +42,12 @@ export const aboutData = {
 
   team: [
     {
-      name: 'Ing. Juan López',
-      position: 'Director General',
+      name: 'Jorge Luis Cabrera',
+      image:
+        'https://drive.google.com/uc?export=view&id=19i2qb0SwhROGmtxtMTv3CHyvdL5Kz-86',
+      position: 'Fundador',
       description:
-        'Ingeniero con más de 20 años de experiencia en sistemas de seguridad. Lidera la estrategia empresarial y la innovación tecnológica.'
-    },
-    {
-      name: 'Ing. María González',
-      position: 'Directora Técnica',
-      description:
-        'Especialista en sistemas de detección y extinción de incendios. Supervisa todos los aspectos técnicos de nuestros proyectos.'
-    },
-    {
-      name: 'Lic. Carlos Rodríguez',
-      position: 'Director Comercial',
-      description:
-        'Experto en relaciones comerciales y desarrollo de nuevos mercados. Gestiona las alianzas estratégicas y el crecimiento empresarial.'
-    },
-    {
-      name: 'Ing. Ana Martínez',
-      position: 'Jefa de Proyectos',
-      description:
-        'Coordinadora experta en gestión de proyectos complejos. Asegura la entrega exitosa de cada implementación.'
-    },
-    {
-      name: 'Téc. Miguel Torres',
-      position: 'Supervisor de Instalaciones',
-      description:
-        'Técnico especializado con amplia experiencia en instalación y mantenimiento de sistemas de seguridad.'
-    },
-    {
-      name: 'Lic. Laura Fernández',
-      position: 'Responsable de Calidad',
-      description:
-        'Encargada de garantizar el cumplimiento de todos los estándares de calidad y normativas vigentes.'
+        'Fundador de la empresa, con más de 20 años de experiencia en sistemas de seguridad.'
     }
   ] as TeamMember[]
 };

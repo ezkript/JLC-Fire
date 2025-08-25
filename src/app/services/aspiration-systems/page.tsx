@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { getServiceById } from '@/lib/services-data';
+import { getServiceImages } from '@/lib/services-images';
 import ServiceHero from '@/components/services/ServiceHero/ServiceHero';
 import ServiceFeatures from '@/components/services/ServiceFeatures/ServiceFeatures';
 import ServiceInfo from '@/components/services/ServiceInfo/ServiceInfo';
@@ -9,8 +10,9 @@ import { featuresList, technicalInfo } from '@/lib/aspirationSystems.utils';
 
 export default function AspirationSystemsPage() {
   const service = getServiceById('aspiration-systems');
+  const images = getServiceImages('aspiration-systems');
 
-  if (!service) {
+  if (!service || !images) {
     return <div>Servicio no encontrado</div>;
   }
 
@@ -23,8 +25,8 @@ export default function AspirationSystemsPage() {
         icon={service.icon}
         gradientFrom="from-red-700"
         gradientTo="to-red-900"
-        imageUrl="/images/services/aspiration-systems-hero.jpg"
-        videoUrl={undefined}
+        imageUrl={images.hero.imageUrl}
+        videoUrl={images.hero.videoUrl}
       />
       <ServiceInfo
         title="Servicio de Instalación"
@@ -32,8 +34,8 @@ export default function AspirationSystemsPage() {
         sections={technicalInfo}
         gradientFrom="from-red-600"
         gradientTo="to-red-700"
-        imageUrl="/images/services/aspiration-systems-installation.jpg"
-        imageAlt="Instalación de sistema de aspiración"
+        imageUrl={images.info.imageUrl}
+        imageAlt={images.info.imageAlt}
       />
       <ServiceFeatures
         title="Características Principales"
@@ -41,8 +43,8 @@ export default function AspirationSystemsPage() {
         features={featuresList}
         gradientFrom="from-red-600"
         gradientTo="to-red-700"
-        imageUrl="/images/services/aspiration-systems-features.jpg"
-        imageAlt="Sistema de aspiración en instalación"
+        imageUrl={images.features.imageUrl}
+        imageAlt={images.features.imageAlt}
       />
     </div>
   );

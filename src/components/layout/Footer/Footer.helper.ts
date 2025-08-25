@@ -1,3 +1,5 @@
+import { CONTACT_DATA } from '@/lib/constants';
+
 export const footerInfo = {
   company: {
     name: 'JLC Fire',
@@ -5,9 +7,9 @@ export const footerInfo = {
       'Soluciones integrales en sistemas de seguridad electrónica y protección contra incendios'
   },
   contact: {
-    email: 'info@jlcfire.com',
-    phone: '+54 11 1234-5678',
-    address: 'Buenos Aires, Argentina'
+    email: CONTACT_DATA.email,
+    phone: CONTACT_DATA.phoneNumber,
+    address: CONTACT_DATA.address
   },
   pages: [
     { name: 'Inicio', href: '/' },

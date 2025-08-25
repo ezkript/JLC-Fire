@@ -2,123 +2,109 @@ import { Certification } from '@/types';
 
 export const certificationsData: Certification[] = [
   {
-    id: 'iso-9001',
-    title: 'ISO 9001:2015',
+    id: 'iram-3546',
+    title: 'IRAM 3546',
     description:
-      'Sistema de Gestión de Calidad que demuestra nuestra capacidad para proporcionar productos y servicios que cumplen con los requisitos del cliente y las regulaciones aplicables.',
-    issuer: 'Bureau Veritas',
+      'Certificación de empresas para la inspección, prueba y mantenimiento de instalaciones contra incendios.',
+    issuer: 'IRAM',
     issueDate: '2023-01-15',
     image:
-      'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop',
+      'https://drive.google.com/uc?export=view&id=1iKNRbZMdM945PaGD92dVZT-XuUyDUZlj',
     category: 'fire-safety',
     status: 'active'
   },
   {
-    id: 'iso-14001',
-    title: 'ISO 14001:2015',
+    id: 'nfs-x',
+    title: 'NFS-320, NFS2-640 & NFS2-3030',
     description:
-      'Sistema de Gestión Ambiental que certifica nuestro compromiso con la protección del medio ambiente y la mejora continua de nuestro desempeño ambiental.',
-    issuer: 'SGS Argentina',
-    issueDate: '2023-03-20',
+      'Paneles de detección y alarma de incendios NOTIFIER ONYX, escalables de sitios pequeños a grandes.',
+    issuer: 'NOTIFIER',
+    issueDate: '2019-10-05',
     image:
-      'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop',
+      'https://drive.google.com/uc?export=view&id=17t5nQTjVHouowh7aEK0PeFFOJGIblRqr',
     category: 'fire-safety',
     status: 'active'
   },
   {
-    id: 'iso-45001',
-    title: 'ISO 45001:2018',
+    id: 'bkm-equipment',
+    title: 'Programa de entrenamiento Buckeye Kitchen Mister',
     description:
-      'Sistema de Gestión de Seguridad y Salud en el Trabajo que garantiza un entorno laboral seguro y saludable para nuestros empleados y colaboradores.',
-    issuer: 'IRAM',
-    issueDate: '2023-06-10',
+      'Capacitación práctica integral en diseño, instalación, prueba y mantenimiento del sistema Kitchen Mister de Buckeye.',
+    issuer: 'Buckeye',
+    issueDate: '2020-04-26',
     image:
-      'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop',
-    category: 'security',
-    status: 'active'
-  },
-  {
-    id: 'nfpa-certified',
-    title: 'Certificación NFPA',
-    description:
-      'Certificación de la National Fire Protection Association que acredita nuestro conocimiento y cumplimiento de los estándares internacionales de protección contra incendios.',
-    issuer: 'NFPA International',
-    issueDate: '2022-11-05',
-    image:
-      'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop',
+      'https://drive.google.com/uc?export=view&id=1akYKJ7vPztKu4rcgxy3KQ4zHm_za0CQT',
     category: 'fire-safety',
     status: 'active'
   },
   {
-    id: 'ul-listed',
-    title: 'UL Listed',
+    id: 'amerex-kp',
+    title: 'Kitchen Protection Systems Certificate',
     description:
-      'Certificación Underwriters Laboratories que garantiza que nuestros sistemas cumplen con los más altos estándares de seguridad y calidad.',
-    issuer: 'Underwriters Laboratories',
-    issueDate: '2023-08-15',
+      'Examen que certifica técnicos en sistemas de extinción de incendios para cocinas comerciales.',
+    issuer: 'AmeRex',
+    issueDate: '2020-11-04',
     image:
-      'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop',
+      'https://drive.google.com/uc?export=view&id=1f1V4_wZLOdoCbfRsvYqKROa8gFncga9m',
     category: 'fire-safety',
     status: 'active'
   },
   {
-    id: 'siemens-partner',
-    title: 'Siemens Certified Partner',
+    id: 'lea-fs',
+    title: 'Mantenimiento de sistemas de protección contra incendios',
     description:
-      'Certificación como Partner Certificado de Siemens para la implementación y mantenimiento de sistemas de automatización y control.',
-    issuer: 'Siemens Argentina',
-    issueDate: '2023-04-12',
+      'Seminario sobre mantenimiento de sistemas de protección contra incendios de Leza, Escriña y Asociados',
+    issuer: 'Leza, Escriña y Asociados',
+    issueDate: '2021-06-03',
     image:
-      'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop',
-    category: 'bms',
+      'https://drive.google.com/uc?export=view&id=1RGeL5Mnbz-XdNylvIThT-KXd-wzlNfwF',
+    category: 'fire-safety',
     status: 'active'
   },
   {
-    id: 'honeywell-partner',
-    title: 'Honeywell Authorized Partner',
+    id: 'es-ln-eiop',
+    title: 'Operadores de IPAF',
     description:
-      'Certificación como Partner Autorizado de Honeywell para sistemas de seguridad, control de acceso y automatización de edificios.',
-    issuer: 'Honeywell Argentina',
-    issueDate: '2023-02-28',
+      'Certificación de operadores de IPAF (Federación Internacional de Acceso Motorizado)',
+    issuer: 'IPAF',
+    issueDate: '2021-07-12',
     image:
-      'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop',
+      'https://drive.google.com/uc?export=view&id=1-OVfvvhu_DKIGmJKn79_NBdpdAkIx1lq',
     category: 'security',
     status: 'active'
   },
   {
-    id: 'bosch-partner',
-    title: 'Bosch Security Partner',
-    description:
-      'Certificación como Partner de Seguridad de Bosch para sistemas de videovigilancia, control de acceso y detección de incendios.',
-    issuer: 'Bosch Security Systems',
-    issueDate: '2023-07-18',
+    id: 'cl/229',
+    title: 'Notifier Onyx University Latin America',
+    description: 'Entrenamiento de Notifier Onyx University Latin America',
+    issuer: 'Notifier',
+    issueDate: '2023-12-09',
     image:
-      'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop',
-    category: 'security',
+      'https://drive.google.com/uc?export=view&id=1LAm11cLyEL3JURvDIj2PyjmnrHOMfm8F',
+    category: 'fire-safety',
     status: 'active'
   },
   {
-    id: 'microsoft-partner',
-    title: 'Microsoft Partner',
-    description:
-      'Certificación como Microsoft Partner para el desarrollo e implementación de soluciones de software y sistemas de gestión.',
-    issuer: 'Microsoft Argentina',
-    issueDate: '2023-09-22',
+    id: 'cl/342',
+    title: 'Notifier Workstation + DVC',
+    description: 'Entrenamiento de Notifier Workstation + DVC',
+    issuer: 'Notifier',
+    issueDate: '2024-10-22',
     image:
-      'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop',
-    category: 'software',
+      'https://drive.google.com/uc?export=view&id=1ifafPGIm9nQ9VtSHqBETnEmCderC1k3b',
+    category: 'fire-safety',
     status: 'active'
   },
   {
-    id: 'enac-accredited',
-    title: 'Acreditación ENAC',
+    id: 'fire-101',
+    title: 'Introduction to Fire Alarm Technology',
     description:
-      'Acreditación de la Entidad Nacional de Acreditación que certifica nuestra competencia técnica en sistemas de seguridad.',
-    issuer: 'ENAC España',
-    issueDate: '2022-12-03',
+      'Curso introductorio de Honeywell que enseña fundamentos y componentes de sistemas de alarma contra incendios.',
+    issuer: 'Honeywell',
+    issueDate: '2023-11-06',
     image:
-      'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop',
-    category: 'security',
+      'https://drive.google.com/uc?export=view&id=1GPdceN_SHrKLiW6w6DRs3fgrvvWt_IDH',
+    category: 'fire-safety',
     status: 'active'
   }
 ];

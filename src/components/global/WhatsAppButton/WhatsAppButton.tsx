@@ -5,9 +5,7 @@ import WhatsAppIcon from './WhatsAppIcon';
 import { CONTACT_DATA } from '@/lib/constants';
 
 export default function WhatsAppButton(props: Props) {
-  const { phoneNumber = CONTACT_DATA.phoneNumber } = props;
-
-  const whatsappUrl = `https://wa.me/${phoneNumber}`;
+  const whatsappUrl = CONTACT_DATA.whatsapp;
 
   return (
     <a

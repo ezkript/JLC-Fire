@@ -23,9 +23,13 @@ export default function Brands(props: Props) {
           delay={0.2}
         >
           {brands.map(brand => (
-            <div
+            <a
               key={brand.id}
-              className="flex items-center justify-center p-6 bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 group border border-neutral-100 hover:border-primary-200"
+              href={brand.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center p-6 bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 group border border-neutral-100 hover:border-primary-200 cursor-pointer"
+              title={`Visitar sitio web de ${brand.name}`}
             >
               <div className="relative w-20 h-12 grayscale group-hover:grayscale-0 transition-all duration-300">
                 <Image
@@ -36,7 +40,7 @@ export default function Brands(props: Props) {
                   sizes="80px"
                 />
               </div>
-            </div>
+            </a>
           ))}
         </AnimatedSection>
       </div>

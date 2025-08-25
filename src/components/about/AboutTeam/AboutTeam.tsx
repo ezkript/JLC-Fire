@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
 import { AnimatedSection } from '@/components/global/AnimatedSection/AnimatedSection';
 import { AboutTeamProps as Props } from './AboutTeam.types';
 
@@ -29,13 +30,23 @@ export default function AboutTeam(props: Props) {
               delay={0.1 * (index + 1)}
             >
               <div className="text-center group">
-                <div className="w-32 h-32 bg-gradient-to-br from-primary-100 to-primary-200 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform duration-300">
-                  <span className="text-4xl font-bold text-primary-600">
-                    {member.name
-                      .split(' ')
-                      .map(n => n[0])
-                      .join('')}
-                  </span>
+                <div className="w-32 h-32 bg-gradient-to-br from-primary-100 to-primary-200 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-105 transition-transform duration-300 overflow-hidden">
+                  {member.image ? (
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  ) : (
+                    <span className="text-4xl font-bold text-primary-600">
+                      {member.name
+                        .split(' ')
+                        .map(n => n[0])
+                        .join('')}
+                    </span>
+                  )}
                 </div>
                 <h3 className="text-xl font-bold text-dark-900 mb-2">
                   {member.name}

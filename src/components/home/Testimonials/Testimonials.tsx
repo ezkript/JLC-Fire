@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { ClientsProps as Props } from './Testimonials.types';
 import { clients, sectionConfig } from './Testimonials.helper';
 import { AnimatedSection } from '@/components/global/AnimatedSection/AnimatedSection';
@@ -17,21 +18,22 @@ export default function Clients(props: Props) {
             </p>
           </div>
         </AnimatedSection>
-
         <AnimatedSection
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           direction="up"
           delay={0.2}
         >
           {clients.map(client => (
-            <div
+            <Link
               key={client.id}
-              className="group relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 border border-neutral-100 hover:border-primary-200 overflow-hidden"
+              href={client.url || '#'}
+              className="group relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 border border-neutral-100 hover:border-primary-200 overflow-hidden cursor-pointer"
+              title={`Ver proyecto de ${client.name}`}
             >
               <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-primary-500/5 to-transparent rounded-bl-full transition-all duration-500 group-hover:from-primary-500/10"></div>
               <div className="relative z-10">
                 <div className="flex items-center justify-center mb-6">
-                  <div className="relative w-24 h-16 grayscale group-hover:grayscale-0 transition-all duration-500">
+                  <div className="relative w-24 h-16">
                     <Image
                       src={client.logo}
                       alt={`Logo de ${client.name}`}
@@ -51,7 +53,7 @@ export default function Clients(props: Props) {
                 </div>
                 <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-primary-500 to-primary-600 transition-all duration-500 group-hover:w-full"></div>
               </div>
-            </div>
+            </Link>
           ))}
         </AnimatedSection>
       </div>

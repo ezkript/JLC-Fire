@@ -2,40 +2,40 @@ import { Brand } from './Brands.types';
 
 export const brands: Brand[] = [
   {
-    id: 'siemens',
-    name: 'Siemens',
-    logo: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=120&h=60&q=80',
-    url: 'https://www.siemens.com'
+    id: 'Maxiseguridad',
+    name: 'Maxiseguridad',
+    logo: 'https://www.maxiseguridad.com.ar/img/v2/logo-trayectoria.png',
+    url: 'https://www.maxiseguridad.com.ar'
   },
   {
-    id: 'honeywell',
-    name: 'Honeywell',
-    logo: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=120&h=60&q=80',
-    url: 'https://www.honeywell.com'
+    id: 'Notifier',
+    name: 'Notifier by Honeywell',
+    logo: 'https://www.notifier.es/templates/yootheme/cache/LogoNotifier-090aff50.png',
+    url: 'https://www.notifier.es'
   },
   {
-    id: 'bosch',
-    name: 'Bosch',
-    logo: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=120&h=60&q=80',
-    url: 'https://www.bosch.com'
+    id: 'Melisam',
+    name: 'Melisam',
+    logo: 'https://caprimsa.com.ar/wp-content/uploads/2022/10/melisam.jpg',
+    url: 'https://melisam.com'
   },
   {
-    id: 'tyco',
-    name: 'Tyco',
-    logo: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=120&h=60&q=80',
-    url: 'https://www.tyco.com'
-  },
-  {
-    id: 'notifier',
-    name: 'Notifier',
-    logo: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=120&h=60&q=80',
-    url: 'https://www.notifier.com'
+    id: 'tecfire',
+    name: 'Tec Fire',
+    logo: 'https://media.licdn.com/dms/image/v2/D4E16AQH-DdwjcQ_crg/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1728934683410?e=1758758400&v=beta&t=MyhDKRqcNCTjKMxszku70H2Sf0pVLNXEN_hXnG-pinU',
+    url: 'https://www.tecfire.com.ar'
   },
   {
     id: 'edwards',
     name: 'Edwards',
-    logo: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=120&h=60&q=80',
-    url: 'https://www.edwards.com'
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/9/98/Edwards_Vacuum_Logo.jpg',
+    url: 'https://www.edwardsvacuum.com/'
+  },
+  {
+    id: 'kidde',
+    name: 'Kidde',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/8/82/Kidde_logo_2023.svg',
+    url: 'https://www.kidde-esfire.com'
   }
 ];
 

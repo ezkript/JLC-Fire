@@ -21,7 +21,7 @@ export default function ContactPage() {
       <section className="py-12 bg-black relative overflow-hidden">
         <div className="container-custom relative z-10">
           <AnimatedSection direction="up" delay={0.2}>
-            <ContactHeader 
+            <ContactHeader
               title="Ponte en contacto con nosotros"
               subtitle="Envíanos tu consulta, proyecto o solicitud de presupuesto."
             />
@@ -30,7 +30,7 @@ export default function ContactPage() {
             <AnimatedSection direction="up" delay={0.3}>
               <ContactForm />
             </AnimatedSection>
-            
+
             <AnimatedSection direction="up" delay={0.4}>
               <ContactInfoCards />
             </AnimatedSection>

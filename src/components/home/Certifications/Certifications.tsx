@@ -3,6 +3,7 @@ import { CertificationsProps as Props } from './Certifications.types';
 import { certificationLogos, sectionConfig } from './Certifications.helper';
 import { AnimatedSection } from '@/components/global/AnimatedSection/AnimatedSection';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Certifications(props: Props) {
   return (
@@ -22,42 +23,46 @@ export default function Certifications(props: Props) {
           <div className="relative overflow-hidden">
             <div className="flex animate-scroll">
               {certificationLogos.map(certification => (
-                <div
+                <Link
                   key={`first-${certification.id}`}
-                  className="flex-shrink-0 mx-8 flex flex-col items-center"
+                  href="/certifications"
+                  className="flex-shrink-0 mx-8 flex flex-col items-center group cursor-pointer"
+                  title={`Ver certificación ${certification.name}`}
                 >
                   <div className="relative w-32 h-16 md:w-40 md:h-20">
                     <Image
                       src={certification.logo}
                       alt={certification.name}
-                      className="object-contain filter grayscale hover:grayscale-0 transition-all duration-300 w-full h-full"
+                      className="object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 w-full h-full"
                       width={100}
                       height={100}
                     />
                   </div>
-                  <p className="text-sm font-medium text-dark-700 mt-2 text-center">
+                  <p className="text-sm font-medium text-dark-700 mt-2 text-center group-hover:text-primary-600 transition-colors duration-300 truncate max-w-32 md:max-w-40">
                     {certification.name}
                   </p>
-                </div>
+                </Link>
               ))}
               {certificationLogos.map(certification => (
-                <div
+                <Link
                   key={`second-${certification.id}`}
-                  className="flex-shrink-0 mx-8 flex flex-col items-center"
+                  href="/certifications"
+                  className="flex-shrink-0 mx-8 flex flex-col items-center group cursor-pointer"
+                  title={`Ver certificación ${certification.name}`}
                 >
                   <div className="relative w-32 h-16 md:w-40 md:h-20">
                     <Image
                       src={certification.logo}
                       alt={certification.name}
-                      className="object-contain filter grayscale hover:grayscale-0 transition-all duration-300 w-full h-full"
+                      className="object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 w-full h-full"
                       width={100}
                       height={100}
                     />
                   </div>
-                  <p className="text-sm font-medium text-dark-700 mt-2 text-center">
+                  <p className="text-sm font-medium text-dark-700 mt-2 text-center group-hover:text-primary-600 transition-colors duration-300 truncate max-w-32 md:max-w-40">
                     {certification.name}
                   </p>
-                </div>
+                </Link>
               ))}
             </div>
           </div>

@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { getServiceById } from '@/lib/services-data';
+import { getServiceImages } from '@/lib/services-images';
 import ServiceHero from '@/components/services/ServiceHero/ServiceHero';
 import ServiceFeatures from '@/components/services/ServiceFeatures/ServiceFeatures';
 import ServiceInfo from '@/components/services/ServiceInfo/ServiceInfo';
@@ -8,8 +9,9 @@ import { featuresList, technicalInfo } from '@/lib/accessControl.utils';
 
 export default function AccessControlPage() {
   const service = getServiceById('access-control');
+  const images = getServiceImages('access-control');
 
-  if (!service) {
+  if (!service || !images) {
     return <div>Servicio no encontrado</div>;
   }
 
@@ -22,8 +24,8 @@ export default function AccessControlPage() {
         icon={service.icon}
         gradientFrom="from-red-700"
         gradientTo="to-red-900"
-        imageUrl="/images/services/access-control-hero.jpg"
-        videoUrl={undefined}
+        imageUrl={images.hero.imageUrl}
+        videoUrl={images.hero.videoUrl}
       />
       <ServiceInfo
         title="Servicio de Instalación"
@@ -31,8 +33,8 @@ export default function AccessControlPage() {
         sections={technicalInfo}
         gradientFrom="from-red-600"
         gradientTo="to-red-700"
-        imageUrl="/images/services/access-control-installation.jpg"
-        imageAlt="Instalación de sistema de control de acceso"
+        imageUrl={images.info.imageUrl}
+        imageAlt={images.info.imageAlt}
       />
       <ServiceFeatures
         title="Características Principales"
@@ -40,8 +42,8 @@ export default function AccessControlPage() {
         features={featuresList}
         gradientFrom="from-red-600"
         gradientTo="to-red-700"
-        imageUrl="/images/services/access-control-features.jpg"
-        imageAlt="Sistema de control de acceso en instalación"
+        imageUrl={images.features.imageUrl}
+        imageAlt={images.features.imageAlt}
       />
     </div>
   );

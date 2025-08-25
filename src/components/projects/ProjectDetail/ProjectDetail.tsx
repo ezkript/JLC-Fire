@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { ArrowLeft, Calendar, MapPin, Clock, Users, Award } from 'lucide-react';
 import { AnimatedSection } from '@/components/global/AnimatedSection/AnimatedSection';
 import ProjectBreadcrumb from '../ProjectBreadcrumb/ProjectBreadcrumb';
+import GalleryItem from '../GalleryItem/GalleryItem';
 import {
   sectionConfig,
   getCategoryLabel,
@@ -286,18 +287,13 @@ export default function ProjectDetail(props: Props) {
                 Galería del Proyecto
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {project.gallery.map((image, index) => (
-                  <div
+                {project.gallery.map((item, index) => (
+                  <GalleryItem
                     key={index}
-                    className="relative h-64 rounded-2xl overflow-hidden"
-                  >
-                    <Image
-                      src={image}
-                      alt={`${project.title} - Imagen ${index + 1}`}
-                      fill
-                      className="object-cover hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
+                    item={item}
+                    index={index}
+                    projectTitle={project.title}
+                  />
                 ))}
               </div>
             </AnimatedSection>

@@ -1,49 +1,44 @@
 import { Client } from './Testimonials.types';
+import { projectsData } from '@/lib/projects-data';
 
-export const clients: Client[] = [
-  {
-    id: 'torre-empresarial',
-    name: 'Torre Empresarial Plaza Mayor',
-    logo: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=120&h=60&q=80',
-    industry: 'Edificio Corporativo',
-    url: '#'
-  },
-  {
-    id: 'centro-comercial',
-    name: 'Centro Comercial Galerías',
-    logo: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=120&h=60&q=80',
-    industry: 'Centro Comercial',
-    url: '#'
-  },
-  {
-    id: 'hospital-san-martin',
-    name: 'Hospital San Martín',
-    logo: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=120&h=60&q=80',
-    industry: 'Sector Salud',
-    url: '#'
-  },
-  {
-    id: 'planta-industrial',
-    name: 'Planta Industrial TechCorp',
-    logo: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=120&h=60&q=80',
-    industry: 'Industria Manufacturera',
-    url: '#'
-  },
-  {
-    id: 'universidad',
-    name: 'Universidad Nacional',
-    logo: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=120&h=60&q=80',
-    industry: 'Educación',
-    url: '#'
-  },
-  {
-    id: 'hotel-luxury',
-    name: 'Hotel Luxury Plaza',
-    logo: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=120&h=60&q=80',
-    industry: 'Hospitalidad',
-    url: '#'
-  }
-];
+const getIndustryFromCategory = (category: string): string => {
+  const industryMap: Record<string, string> = {
+    commercial: 'Edificio Corporativo',
+    industrial: 'Industria Manufacturera',
+    healthcare: 'Sector Salud',
+    education: 'Educación',
+    hospitality: 'Hospitalidad',
+    residential: 'Residencial',
+    government: 'Sector Gubernamental',
+    retail: 'Comercio Minorista',
+    warehouse: 'Almacén y Logística',
+    'data-center': 'Centro de Datos'
+  };
+
+  return industryMap[category] || 'Otros Sectores';
+};
+
+export const getClientsFromProjects = (): Client[] => {
+  const uniqueClients = new Map<string, Client>();
+
+  projectsData.forEach(project => {
+    const clientId = project.client.toLowerCase().replace(/\s+/g, '-');
+
+    if (!uniqueClients.has(clientId)) {
+      uniqueClients.set(clientId, {
+        id: clientId,
+        name: project.client,
+        logo: project.image,
+        industry: getIndustryFromCategory(project.category),
+        url: `/projects/${project.id}`
+      });
+    }
+  });
+
+  return Array.from(uniqueClients.values());
+};
+
+export const clients: Client[] = getClientsFromProjects();
 
 export const sectionConfig = {
   title: 'Nuestros Clientes',

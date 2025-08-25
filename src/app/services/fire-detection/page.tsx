@@ -1,6 +1,7 @@
 'use client';
 
 import { getServiceById } from '@/lib/services-data';
+import { getServiceImages } from '@/lib/services-images';
 import ServiceHero from '@/components/services/ServiceHero/ServiceHero';
 import ServiceFeatures from '@/components/services/ServiceFeatures/ServiceFeatures';
 import ServiceInfo from '@/components/services/ServiceInfo/ServiceInfo';
@@ -8,8 +9,9 @@ import { featuresList, technicalInfo } from '../../../lib/fireDetection.utils';
 
 export default function FireDetectionPage() {
   const service = getServiceById('fire-detection');
+  const images = getServiceImages('fire-detection');
 
-  if (!service) {
+  if (!service || !images) {
     return <div>Servicio no encontrado</div>;
   }
 
@@ -22,8 +24,8 @@ export default function FireDetectionPage() {
         icon={service.icon}
         gradientFrom="from-red-700"
         gradientTo="to-red-900"
-        imageUrl="/images/services/fire-detection-hero.jpg"
-        videoUrl={undefined}
+        imageUrl={images.hero.imageUrl}
+        videoUrl={images.hero.videoUrl}
       />
       <ServiceInfo
         title="Servicio de Instalación"
@@ -31,8 +33,8 @@ export default function FireDetectionPage() {
         sections={technicalInfo}
         gradientFrom="from-red-600"
         gradientTo="to-red-700"
-        imageUrl="/images/services/fire-detection-installation.jpg"
-        imageAlt="Instalación de sistema de detección de incendios"
+        imageUrl={images.info.imageUrl}
+        imageAlt={images.info.imageAlt}
       />
       <ServiceFeatures
         title="Características Principales"
@@ -40,8 +42,8 @@ export default function FireDetectionPage() {
         features={featuresList}
         gradientFrom="from-red-600"
         gradientTo="to-red-700"
-        imageUrl="/images/services/fire-detection-features.jpg"
-        imageAlt="Sistema de detección de incendios en instalación"
+        imageUrl={images.features.imageUrl}
+        imageAlt={images.features.imageAlt}
       />
     </div>
   );

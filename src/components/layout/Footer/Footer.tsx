@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import { FooterProps as Props } from './Footer.types';
 import { footerInfo } from './Footer.helper';
+import { CONTACT_DATA } from '@/lib/constants';
 import Logo from '@/components/global/Logo/Logo';
 
 export default function Footer(props: Props) {
@@ -71,7 +72,7 @@ export default function Footer(props: Props) {
             </p>
             <div className="flex items-center space-x-4">
               <Link
-                href="https://linkedin.com/company/jlc-fire"
+                href={CONTACT_DATA.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-neutral-400 hover:text-primary-400 transition-colors duration-300"
@@ -79,7 +80,7 @@ export default function Footer(props: Props) {
                 <Linkedin className="w-5 h-5" />
               </Link>
               <Link
-                href="https://instagram.com/jlcfire"
+                href={CONTACT_DATA.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-neutral-400 hover:text-primary-400 transition-colors duration-300"
@@ -87,7 +88,7 @@ export default function Footer(props: Props) {
                 <Instagram className="w-5 h-5" />
               </Link>
               <Link
-                href="https://facebook.com/jlcfire"
+                href={CONTACT_DATA.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-neutral-400 hover:text-primary-400 transition-colors duration-300"

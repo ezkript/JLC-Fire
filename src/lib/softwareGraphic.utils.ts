@@ -4,9 +4,9 @@ import { Activity, Database } from 'lucide-react';
 
 export const featuresList = [
   {
-    title: 'Interfaces Personalizadas',
+    title: 'Interfaces Intuitivas',
     description:
-      'Desarrollo de interfaces gráficas a medida que se adaptan perfectamente a sus necesidades específicas y flujos de trabajo.',
+      'Interfaces gráficas intuitivas que facilitan la visualización y gestión de eventos críticos.',
     icon: Monitor
   },
   {
@@ -22,48 +22,30 @@ export const featuresList = [
     icon: Clock
   },
   {
-    title: 'Reportes Automáticos',
-    description:
-      'Generación automática de reportes detallados con gráficos, estadísticas y análisis para toma de decisiones informada.',
-    icon: ShieldCheck
-  },
-  {
     title: 'Integración Multiplataforma',
     description:
       'Software compatible con Windows, macOS, Linux y dispositivos móviles para acceso desde cualquier lugar.',
     icon: TrendingUp
-  },
-  {
-    title: 'Soporte Técnico Especializado',
-    description:
-      'Equipo de desarrolladores y técnicos especializados en software de seguridad para soporte continuo y actualizaciones.',
-    icon: CheckCircle
   }
 ];
 
 export const technicalInfo = [
   {
-    title: 'Desarrollo de Software Personalizado',
+    title: 'Implementación y Configuración',
     content:
-      'Desarrollamos software gráfico a medida que se integra perfectamente con sus sistemas existentes. Incluye análisis de requisitos, diseño de interfaz, programación y pruebas exhaustivas.',
+      'Ofrecemos servicios de implementación, configuración y soporte para software gráfico de gestión de seguridad, permitiendo la integración eficiente de todos sus sistemas y la visualización centralizada de eventos críticos.',
     icon: Cpu
-  },
-  {
-    title: 'Configuración y Personalización',
-    content:
-      'Configuramos el software según sus necesidades específicas, incluyendo layouts personalizados, alertas, reportes y integración con otros sistemas de su instalación.',
-    icon: Network
   },
   {
     title: 'Integración con Sistemas Existentes',
     content:
       'Conectamos el software gráfico con todos sus sistemas de seguridad, control de acceso, CCTV y sistemas de incendio para una gestión unificada y centralizada.',
-    icon: Activity
+    icon: Network
   },
   {
-    title: 'Capacitación y Soporte Continuo',
+    title: 'Personalización de Interfaces',
     content:
-      'Entrenamos a su equipo sobre el uso del software, generación de reportes, configuración de alertas y resolución de problemas. Incluimos soporte técnico y actualizaciones.',
-    icon: Database
+      'Adaptamos la interfaz del software gráfico para que se integre perfectamente con su sistema de seguridad, control de acceso, CCTV y sistemas de incendio.',
+    icon: Activity
   }
 ];
