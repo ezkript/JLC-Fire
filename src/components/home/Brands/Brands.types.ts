@@ -7,4 +7,5 @@ export interface Brand {
   name: string;
   logo: string;
   url?: string;
+  category: 'provider' | 'partner';
 }

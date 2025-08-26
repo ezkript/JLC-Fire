@@ -1,69 +1,56 @@
-import { Activity, Clock, Cpu, Database } from 'lucide-react';
-import { Shield, ShieldCheck, TrendingUp } from 'lucide-react';
-import { Droplets, Network, Zap } from 'lucide-react';
+import { Activity, Cpu, Database, Zap } from 'lucide-react';
+import { Shield, ShieldCheck, Network } from 'lucide-react';
 
 export const featuresList = [
   {
-    title: 'Rociadores Automáticos',
+    title: 'Agentes limpios para áreas críticas',
     description:
-      'Rociadores que se activan automáticamente cuando detectan calor, liberando agua para apagar el fuego.',
-    icon: Droplets
-  },
-  {
-    title: 'Sistemas de Gas',
-    description:
-      'Sistemas que liberan gases especiales para apagar incendios sin dañar equipos electrónicos o documentos.',
+      'Selección y cálculo de concentración del agente (sin residuo) para proteger equipamiento sensible y documentación.',
     icon: Shield
   },
   {
-    title: 'Activación Manual y Automática',
+    title: 'Cilindros, toberas y red de descarga',
     description:
-      'El sistema se puede activar automáticamente o manualmente, dando control total al personal de seguridad.',
-    icon: Zap
+      'Dimensionamiento de cilindros, distribución de toberas y cañerías de descarga para cobertura uniforme y segura.',
+    icon: Network
   },
   {
-    title: 'Supervisión Constante',
+    title: 'Detección con zonas cruzadas',
     description:
-      'El sistema verifica constantemente que todo esté funcionando correctamente y alerta si hay algún problema.',
-    icon: Clock
-  },
-  {
-    title: 'Conectado con Detección',
-    description:
-      'Se conecta automáticamente con el sistema de detección para activarse inmediatamente cuando se detecta un incendio.',
+      'Doble confirmación para activación automática, reduciendo falsas descargas y elevando la confiabilidad del sistema.',
     icon: ShieldCheck
   },
   {
-    title: 'Mantenimiento Preventivo',
+    title: 'Activación manual de extinción',
     description:
-      'El sistema avisa cuando necesita mantenimiento, evitando fallas y garantizando que siempre esté listo.',
-    icon: TrendingUp
+      'Pulsadores de extinción con enclavamiento y señalización clara para disparo controlado por el operador.',
+    icon: Zap
   }
 ];
 
 export const technicalInfo = [
   {
-    title: 'Instalación Completa',
+    title: 'Ingeniería y montaje hidráulico',
     content:
-      'Realizamos la instalación completa del sistema de extinción de incendios, incluyendo la red de tuberías, válvulas de control, tanques de almacenamiento y el panel de control principal. Todo se instala siguiendo las normativas de seguridad más estrictas.',
+      'Diseño, suministro e instalación de cañerías, ranuras y soldaduras calificadas, válvulas de control y rociadores.',
     icon: Network
   },
   {
-    title: 'Selección de Agentes',
+    title: 'Sala de bombas y control',
     content:
-      'Analizamos su instalación para determinar el agente extintor más adecuado: agua para oficinas, gases limpios para salas de servidores, espumas para almacenes de combustibles. Cada elección se basa en el tipo de riesgo presente.',
-    icon: Activity
-  },
-  {
-    title: 'Pruebas y Certificación',
-    content:
-      'Después de la instalación, realizamos pruebas exhaustivas del sistema para verificar que funcione correctamente. Obtenemos todas las certificaciones necesarias y entregamos documentación que cumple con las normativas locales.',
+      'Instalación y automatización de bombas principales/jockey, tableros, válvulas de alarma y control de presión/flujo.',
     icon: Cpu
   },
   {
-    title: 'Capacitación del Personal',
+    title: 'Pruebas hidráulicas y puesta en marcha',
     content:
-      'Entrenamos a su equipo sobre el funcionamiento del sistema, procedimientos de emergencia y mantenimiento básico. Incluimos simulacros de activación para que todos sepan qué hacer en caso de emergencia.',
+      'Ensayos de presión, pruebas de flujo y verificación de cobertura; ajustes finales y habilitación del sistema.',
+    icon: Activity
+  },
+  {
+    title: 'Documentación y capacitación',
+    content:
+      'Planos as-built, manuales de operación y capacitación del personal para operación y mantenimiento seguro.',
     icon: Database
   }
 ];

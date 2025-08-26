@@ -28,8 +28,8 @@ export default function FireSuppressionPage() {
         videoUrl={images.hero.videoUrl}
       />
       <ServiceInfo
-        title="Servicio de Instalación"
-        subtitle="Nuestro equipo de instalación profesional garantiza que su sistema de extinción de incendios esté listo para proteger su instalación, con la máxima calidad y cumpliendo todas las normativas de seguridad."
+        title="Extinción por agua"
+        subtitle="Ingeniería e instalación de redes de cañerías, ranuras y soldaduras calificadas, rociadores automáticos y salas de bombas; con pruebas hidráulicas y puesta en marcha."
         sections={technicalInfo}
         gradientFrom="from-red-600"
         gradientTo="to-red-700"
@@ -37,8 +37,8 @@ export default function FireSuppressionPage() {
         imageAlt={images.info.imageAlt}
       />
       <ServiceFeatures
-        title="Características Principales"
-        subtitle="Funcionalidades avanzadas que distinguen nuestros sistemas de extinción de incendios de la competencia."
+        title="Extinción por gases (agentes limpios)"
+        subtitle="Sistemas con cañerías de descarga, cilindros y toberas dimensionadas, integrados a detección con zonas cruzadas para activación automática u opción de activación manual mediante pulsadores de extinción."
         features={featuresList}
         gradientFrom="from-red-600"
         gradientTo="to-red-700"

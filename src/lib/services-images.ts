@@ -40,12 +40,12 @@ export const servicesImages: Record<string, ServiceImages> = {
     },
     info: {
       imageUrl:
-        'https://www.protech-pci.com/wp-content/uploads/2019/02/extinci%C3%B3n-gas.png',
+        'https://bausis.ar/wp-content/uploads/2021/05/extincion-base-agua.jpg',
       imageAlt: 'Instalación de sistema de extinción de incendios'
     },
     features: {
       imageUrl:
-        'https://www.iberext.com/wp-content/uploads/2022/09/difusor-extincion-por-gas-Iberext-1268x552-1.jpg',
+        'https://zensitec.com/wp-content/uploads/Bat-Cil-Rotarex-IG.jpg',
       imageAlt: 'Sistema de extinción de incendios en instalación'
     }
   },

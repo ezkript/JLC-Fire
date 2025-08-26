@@ -67,28 +67,28 @@ export const servicesData: ServiceDetail[] = [
   {
     id: 'fire-suppression',
     title: 'Extinción de Incendios',
-    subtitle: 'Sistemas de extinción por gases limpios',
+    subtitle: 'Sistemas de extinción por agua y por agentes limpios',
     description:
-      'Implementamos sistemas de extinción por gases limpios que combaten incendios de manera eficiente y segura, sin dañar equipos electrónicos y minimizando el impacto en el medio ambiente.',
+      'Diseñamos, instalamos y certificamos sistemas de extinción por agua (rociadores) y por agentes limpios (gases). Integramos redes de cañerías, ranuras y soldaduras, salas de bombas, cilindros y toberas, con detección de incendio por zonas cruzadas y opción de activación manual mediante pulsadores de extinción.',
     icon: Shield,
     category: 'fire',
     image: '/images/services/fire-suppression.jpg',
     href: '/services/fire-suppression',
     features: [
-      'Sistemas de rociadores automáticos',
-      'Extinción por gas limpio',
-      'Sistemas de espuma',
-      'Activación automática y manual',
-      'Monitoreo de presión y flujo',
-      'Mantenimiento preventivo'
+      'Rociadores automáticos y salas de bombas',
+      'Red de cañerías, ranuras y soldaduras certificadas',
+      'Extinción por agentes limpios: cilindros y toberas',
+      'Detección con zonas cruzadas (activación automática)',
+      'Activación manual con pulsadores de extinción',
+      'Supervisión, pruebas hidráulicas y mantenimiento'
     ],
     benefits: [
-      'Respuesta automática inmediata',
-      'Control efectivo del fuego',
-      'Protección de equipos críticos',
-      'Minimización de daños por agua',
-      'Cumplimiento de estándares NFPA',
-      'Reducción de tiempo de inactividad'
+      'Respuesta rápida y control del fuego en origen',
+      'Protección de activos y continuidad operativa',
+      'Soluciones sin daño para equipamiento sensible',
+      'Diseño seguro y documentado',
+      'Reducción de daños por agua y costos asociados',
+      'Documentación, capacitación y soporte continuo'
     ]
   },
   {
