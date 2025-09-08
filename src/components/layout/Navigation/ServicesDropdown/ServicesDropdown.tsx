@@ -21,14 +21,9 @@ export default function ServicesDropdown({
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.2 }}
-          className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-white shadow-lg border border-neutral-200 rounded-xl overflow-hidden z-50 min-w-[200px]"
-          style={{
-            marginTop: '-8px',
-            paddingTop: '8px'
-          }}
+          className="absolute top-full mt-4 pt-2 transform bg-white shadow-lg border border-neutral-200 rounded-xl overflow-hidden z-50 min-w-[200px]"
         >
-          {/* Arrow */}
-          <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white border-l border-t border-neutral-200 rotate-45"></div>
+          <div className="absolute -top-2 transform w-4 h-4 bg-white border-l border-t border-neutral-200 rotate-45"></div>
 
           <div className="py-2">
             {servicesData.map((service, index) => (

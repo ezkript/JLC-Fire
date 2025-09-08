@@ -84,7 +84,7 @@ export default function Hero(props: Props) {
                   href={currentProject.ctaLink}
                   variant="primary"
                   size="lg"
-                  className="text-sm sm:text-sm w-full lg:text-sm px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
+                  className="text-sm sm:text-sm lg:text-sm px-6 sm:px-8 py-3 sm:py-4 w-full sm:w-auto"
                 >
                   {currentProject.ctaText}
                 </Button>
