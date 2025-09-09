@@ -3,6 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Settings } from 'lucide-react';
 import { ServiceInfoProps as Props } from './ServiceInfo.types';
+import Image from 'next/image';
 
 export default function ServiceInfo(props: Props) {
   const { title, subtitle, sections, imageAlt } = props;
@@ -61,10 +62,12 @@ export default function ServiceInfo(props: Props) {
           >
             {imageUrl ? (
               <div className="relative rounded-xl overflow-hidden shadow-xl">
-                <img
+                <Image
                   src={imageUrl}
                   alt={imageAlt || title}
                   className="w-full h-auto"
+                  width={800}
+                  height={600}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
               </div>

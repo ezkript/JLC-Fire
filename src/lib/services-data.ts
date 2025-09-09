@@ -6,6 +6,7 @@ import {
   Wrench,
   Monitor,
   Fan,
+  Cable,
   LucideIcon
 } from 'lucide-react';
 
@@ -224,6 +225,34 @@ export const servicesData: ServiceDetail[] = [
       'Análisis de datos avanzado',
       'Escalabilidad del sistema',
       'ROI mejorado'
+    ]
+  },
+  {
+    id: 'fusion-fiber',
+    title: 'Fusión de Fibra',
+    subtitle: 'Servicios especializados de fusión óptica',
+    description:
+      'Ofrecemos servicios profesionales de fusión de fibra óptica para conexiones de alta calidad, incluyendo empalmes, terminaciones y certificación de enlaces con equipos de última generación.',
+    icon: Cable,
+    category: 'support',
+    image:
+      'https://drive.google.com/uc?export=view&id=1U-YxS2HcsPJHCB1RnbShNhZ7q9rH9ycm',
+    href: '/services/fusion-fiber',
+    features: [
+      'Fusión de fibra monomodo y multimodo',
+      'Empalmes de alta calidad',
+      'Terminaciones en conectores',
+      'Certificación de enlaces',
+      'Reparación de cables dañados',
+      'Documentación técnica completa'
+    ],
+    benefits: [
+      'Conexiones de máxima calidad',
+      'Pérdidas mínimas de señal',
+      'Mayor confiabilidad del enlace',
+      'Cumplimiento de estándares',
+      'Servicio técnico especializado',
+      'Garantía de trabajo realizado'
     ]
   }
 ];

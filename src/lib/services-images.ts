@@ -137,6 +137,24 @@ export const servicesImages: Record<string, ServiceImages> = {
         'https://honeywell.scene7.com/is/image/Honeywell65/hbt-fire-nfs2-3030-cpu2-3030nd-primaryimage',
       imageAlt: 'Modelado 3D y visualización de proyectos'
     }
+  },
+
+  'fusion-fiber': {
+    hero: {
+      imageUrl:
+        'https://drive.google.com/uc?export=view&id=1U-YxS2HcsPJHCB1RnbShNhZ7q9rH9ycm',
+      videoUrl: undefined
+    },
+    info: {
+      imageUrl:
+        'https://drive.google.com/uc?export=view&id=1Rvxy7hiaDeOwp1Zj62P-gW_G2W0F944_',
+      imageAlt: 'Proceso de fusión de fibra óptica'
+    },
+    features: {
+      imageUrl:
+        'https://drive.google.com/uc?export=view&id=1f4CJ6hZHVs3MPx75LrNKrZ0PxiIb5FHq',
+      imageAlt: 'Equipos de medición y certificación de fibra óptica'
+    }
   }
 };
 
