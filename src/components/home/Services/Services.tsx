@@ -8,7 +8,8 @@ import {
   Building2,
   Wrench,
   Monitor,
-  Fan
+  Fan,
+  Cable
 } from 'lucide-react';
 import { ServicesProps as Props } from './Services.types';
 import { services, sectionConfig } from './Services.helper';
@@ -65,6 +66,8 @@ export default function Services(props: Props) {
                           <Monitor className="w-5 h-5 text-primary-600" />
                         ) : service.icon === 'Fan' ? (
                           <Fan className="w-5 h-5 text-primary-600" />
+                        ) : service.icon === 'Cable' ? (
+                          <Cable className="w-5 h-5 text-primary-600" />
                         ) : null}
                       </div>
                     </div>

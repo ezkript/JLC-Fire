@@ -49,5 +49,11 @@ export const services = [
     title: 'Mantenimiento',
     icon: 'Wrench',
     href: '/services/maintenance'
+  },
+  {
+    id: 'fusion-fiber',
+    title: 'Fusión de Fibra',
+    icon: 'Cable',
+    href: '/services/fusion-fiber'
   }
 ];
