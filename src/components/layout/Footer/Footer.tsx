@@ -95,13 +95,20 @@ export default function Footer(props: Props) {
               >
                 <Facebook className="w-5 h-5" />
               </Link>
-              <Link
-                href="/terms"
-                className="text-sm text-neutral-400 hover:text-primary-400 transition-colors duration-300"
-              >
-                Términos de Servicio
-              </Link>
             </div>
+          </div>
+          <div className="mt-4 pt-4 border-t border-neutral-800/50">
+            <p className="text-xs text-neutral-500 text-center">
+              Desarrollado por{' '}
+              <Link
+                href="https://gonzalobalboa.online"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-neutral-400 hover:text-primary-400 transition-colors duration-300 hover:underline"
+              >
+                Gonzalo Balboa
+              </Link>
+            </p>
           </div>
         </div>
       </div>
