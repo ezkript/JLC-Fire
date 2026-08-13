@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ClientsProps as Props } from './Testimonials.types';
 import { clients, sectionConfig } from './Testimonials.helper';
 import { AnimatedSection } from '@/components/global/AnimatedSection/AnimatedSection';
+import { clientsData } from '@/lib/projects-data';
 
 export default function Clients(props: Props) {
   return (
@@ -54,6 +55,36 @@ export default function Clients(props: Props) {
                 <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-primary-500 to-primary-600 transition-all duration-500 group-hover:w-full"></div>
               </div>
             </Link>
+          ))}
+          {clientsData.map(item => (
+            <div
+              key={item.id}
+              className="group relative bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-500 border border-neutral-100 hover:border-primary-200 overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-primary-500/5 to-transparent rounded-bl-full transition-all duration-500 group-hover:from-primary-500/10"></div>
+              <div className="relative z-10">
+                <div className="flex items-center justify-center mb-6">
+                  <div className="relative w-24 h-16">
+                    <Image
+                      src={item.logo}
+                      alt={`Logo de ${item.name}`}
+                      fill
+                      className="object-contain"
+                      sizes="96px"
+                    />
+                  </div>
+                </div>
+                <div className="text-center">
+                  <h3 className="font-semibold text-dark-900 mb-2 text-sm group-hover:text-primary-600 transition-colors duration-300">
+                    {item.name}
+                  </h3>
+                  <p className="text-xs text-neutral-500 bg-neutral-50 px-3 py-1 rounded-full inline-block">
+                    {item.desc}
+                  </p>
+                </div>
+                <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-primary-500 to-primary-600 transition-all duration-500 group-hover:w-full"></div>
+              </div>
+            </div>
           ))}
         </AnimatedSection>
       </div>

@@ -8,7 +8,7 @@ import WhatsAppIcon from '../WhatsAppButton/WhatsAppIcon';
 import { CONTACT_DATA } from '@/lib/constants';
 
 export default function ContactModal(props: Props) {
-  const { isOpen, onClose, phoneNumber = CONTACT_DATA.phoneNumber } = props;
+  const { isOpen, onClose } = props;
   const [contactMethod, setContactMethod] = useState<
     'whatsapp' | 'email' | null
   >(null);
@@ -16,7 +16,7 @@ export default function ContactModal(props: Props) {
   if (!isOpen) return null;
 
   const handleWhatsApp = () => {
-    const whatsappUrl = `https://wa.me/${phoneNumber}`;
+    const whatsappUrl = CONTACT_DATA.whatsapp;
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
     onClose();
   };

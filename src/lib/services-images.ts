@@ -14,6 +14,26 @@ export interface ServiceImages {
 }
 
 export const servicesImages: Record<string, ServiceImages> = {
+  'fire-piping': {
+    hero: {
+      imageUrl:
+        'https://drive.google.com/uc?export=view&id=1m-_8TTgPHECzLYmEO22jXkD-4BroZ00F',
+      videoUrl: undefined
+    },
+    info: {
+      imageUrl:
+        'https://drive.google.com/uc?export=view&id=14HWFlsOqUQ_SBWfBOC7yaBxFbw1phppW',
+      imageAlt:
+        'Instalación y tendido de red de cañerías contra incendios en planta industrial'
+    },
+    features: {
+      imageUrl:
+        'https://drive.google.com/uc?export=view&id=1ME5eFnmVPbc1-l0H3yM466ya3CAPrYBt',
+      imageAlt:
+        'Uniones ranuradas y montaje de colectores de agua contra incendios'
+    }
+  },
+
   'fire-detection': {
     hero: {
       imageUrl:

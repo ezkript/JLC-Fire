@@ -7,6 +7,7 @@ import {
   Monitor,
   Fan,
   Cable,
+  Network,
   LucideIcon
 } from 'lucide-react';
 
@@ -21,6 +22,7 @@ export interface ServiceDetail {
   image: string;
   href: string;
   category: 'fire' | 'security' | 'management' | 'support';
+  featured?: boolean;
   heroImage?: string;
   heroVideo?: string;
   benefitsImage?: string;
@@ -38,6 +40,36 @@ export interface ServiceDetail {
 }
 
 export const servicesData: ServiceDetail[] = [
+  {
+    id: 'fire-piping',
+    title: 'Cañerías contra Incendios',
+    subtitle:
+      'Ingeniería, prefabricación y montaje de redes de protección hidráulica contra incendios',
+    description:
+      'Somos especialistas en diseño, prefabricación y montaje integral de redes de cañerías contra incendios (sistemas de rociadores, hidrantes y gabinetes). Ejecutamos uniones ranuradas Victaulic y soldaduras certificadas bajo la estricta norma NFPA.',
+    icon: Network,
+    category: 'fire',
+    featured: true,
+    image:
+      'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80',
+    href: '/services/fire-piping',
+    features: [
+      'Ingeniería hidráulica y cálculo de caudal',
+      'Uniones ranuradas tipo Victaulic e instaladas a precisión',
+      'Soldaduras de acero calificadas AWS / ISO',
+      'Montaje de colectores, rociadores y nichos hidrantes',
+      'Pruebas de presión e hidrostáticas documentadas',
+      'Conformidad con normativas NFPA 13, 14 y 20'
+    ],
+    benefits: [
+      'Máxima confiabilidad estructural y estanqueidad',
+      'Montaje ágil con menor tiempo de interrupción en obra',
+      'Resistencia a altas presiones operativas y choques térmicos',
+      'Trazabilidad completa de materiales y certificaciones',
+      'Bajo costo de mantenimiento preventivo',
+      'Garantía total de habilitación y auditoría contra incendios'
+    ]
+  },
   {
     id: 'fire-detection',
     title: 'Detección de Incendios',

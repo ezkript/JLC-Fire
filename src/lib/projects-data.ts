@@ -86,6 +86,39 @@ export const projectsData: ProjectDetail[] = [
   }
 ];
 
+export const clientsData = [
+  {
+    id: 1,
+    name: 'Georgia',
+    logo: '/clients/matafuegos_georgia_logo.jpg',
+    desc: 'Empresa de seguridad contra incendios'
+  },
+  {
+    id: 2,
+    name: 'Fkuno',
+    logo: '/clients/fkunho_logo.jpg',
+    desc: 'Empresa de seguridad contra incendios'
+  },
+  {
+    id: 3,
+    name: 'Melisam',
+    logo: '/clients/melisam_logos.png',
+    desc: 'Empresa de seguridad contra incendios'
+  },
+  {
+    id: 4,
+    name: 'securion',
+    logo: '/clients/securion_logo.png',
+    desc: 'Empresa de prevención contra incendios'
+  },
+  {
+    id: 5,
+    name: 'Maxiseguridad',
+    logo: '/clients/maxiseguridad_logo.png',
+    desc: 'Empresa de seguridad contra incendios'
+  }
+];
+
 export const getProjectById = (id: string): ProjectDetail | undefined => {
   return projectsData.find(project => project.id === id);
 };

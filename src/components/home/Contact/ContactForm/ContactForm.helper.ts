@@ -1,5 +1,9 @@
 export const serviceOptions = [
   { value: '', label: 'Selecciona un servicio' },
+  {
+    value: 'fire-piping',
+    label: 'Cañerías contra Incendios'
+  },
   { value: 'fire-detection', label: 'Detección de Incendios' },
   { value: 'fire-suppression', label: 'Extinción de Incendios' },
   { value: 'access-control', label: 'Control de Acceso' },

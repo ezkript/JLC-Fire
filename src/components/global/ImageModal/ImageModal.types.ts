@@ -1,7 +1,8 @@
 export interface ImageModalProps {
   isOpen: boolean;
   onClose: () => void;
-  imageSrc: string;
-  imageAlt: string;
+  mediaSrc: string;
+  mediaAlt: string;
+  isVideo?: boolean;
   title?: string;
 }

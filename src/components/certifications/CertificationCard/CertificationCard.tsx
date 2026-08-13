@@ -77,8 +77,8 @@ export default function CertificationCard(props: Props) {
       <ImageModal
         isOpen={isModalOpen}
         onClose={handleCloseModal}
-        imageSrc={certification.image || ''}
-        imageAlt={certification.title}
+        mediaSrc={certification.image || ''}
+        mediaAlt={certification.title}
         title={certification.title}
       />
     </>
