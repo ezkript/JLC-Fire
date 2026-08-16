@@ -19,7 +19,7 @@ Servicios Principales:
 9. Software Gráfico: Integración visual de sistemas de seguridad.
 
 Contacto:
-Teléfono: +54 9 11 0000-0000
+Teléfono: +54 9 11 3292-6347
 Sitio Web: https://jlc-fire.vercel.app
 `;
 
