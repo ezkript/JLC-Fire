@@ -20,7 +20,7 @@ Servicios Principales:
 
 Contacto:
 Teléfono: +54 9 11 0000-0000
-Sitio Web: https://jlcfire.com
+Sitio Web: https://jlc-fire.vercel.app
 `;
 
   return new NextResponse(content, {

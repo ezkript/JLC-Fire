@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || 'https://jlcfire.com'
+    process.env.NEXT_PUBLIC_SITE_URL || 'https://jlc-fire.vercel.app'
   ),
   title: {
     default: 'JLC Fire - Sistemas de Seguridad y Protección contra Incendios',
@@ -60,7 +60,7 @@ const jsonLd = {
   name: 'JLC Fire',
   description:
     'Especialistas en sistemas de seguridad electrónica, detección y extinción de incendios, control de acceso, BMS y mantenimiento.',
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://jlcfire.com',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://jlc-fire.vercel.app',
   telephone: '+54 9 11 3292-6347',
   address: {
     '@type': 'PostalAddress',
