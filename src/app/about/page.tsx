@@ -1,4 +1,11 @@
+import type { Metadata } from 'next';
 import React from 'react';
+
+export const metadata: Metadata = {
+  title: 'Nosotros | JLC Fire - Expertos en Protección Contra Incendios',
+  description:
+    'Conoce a JLC Fire, nuestra misión, visión y el equipo detrás de nuestras soluciones integrales en seguridad electrónica y extinción de incendios.'
+};
 import { aboutData } from '@/lib/about-data';
 import AboutHero from '@/components/about/AboutHero/AboutHero';
 import AboutMission from '@/components/about/AboutMission/AboutMission';
