@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     icon: '/favicon.ico'
   },
   verification: {
-    google: 'googled1d80b9cbc0f620a'
+    google: 'lyHj1N5Z3lo0xzbtGbnukpsEtLdX2TvpR6vhN_Xlo9I'
   }
 };
 
