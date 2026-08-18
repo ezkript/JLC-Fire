@@ -4,7 +4,17 @@ import React from 'react';
 export const metadata: Metadata = {
   title: 'Nosotros | JLC Fire - Expertos en Protección Contra Incendios',
   description:
-    'Conoce a JLC Fire, nuestra misión, visión y el equipo detrás de nuestras soluciones integrales en seguridad electrónica y extinción de incendios.'
+    'Conoce a JLC Fire, nuestra misión, visión y el equipo detrás de nuestras soluciones integrales en seguridad electrónica y extinción de incendios.',
+  alternates: {
+    canonical: '/about'
+  },
+  openGraph: {
+    title: 'Nosotros | JLC Fire',
+    description:
+      'Conoce a JLC Fire, nuestra misión, visión y el equipo detrás de nuestras soluciones.',
+    url: '/about',
+    type: 'website'
+  }
 };
 import { aboutData } from '@/lib/about-data';
 import AboutHero from '@/components/about/AboutHero/AboutHero';
